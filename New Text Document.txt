@@ -1,0 +1,16 @@
+http://embedded-lab.com/blog/?p=8989
+http://www.evilmadscientist.com/2010/say-hello-to-xmega/
+http://leoninstruments.blogspot.com/2014/04/xmega-training-02-first-program.html
+http://electro-logic.blogspot.it/2013/06/xmega-io.html  GOOD
+http://asf.atmel.com/docs/latest/xmegaau/html/index.html
+http://embedded-lab.com/blog/?p=8787
+
+
+http://morf.lv/modules.php?name=tutorials&lasit=28    reloj
+
+
+http://www.mikroe.com/ready/xmega/   crear a board
+http://www.gabotronics.com/development-boards/avr-xmegalab.htm
+
+
+TUTORIALES http://www.jtronics.de/avr-projekte/xmega-tutorial/xmega-tutorial-pwm.html

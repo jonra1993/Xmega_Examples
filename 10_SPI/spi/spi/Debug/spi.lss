@@ -1,0 +1,1445 @@
+
+spi.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000006a4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  00802000  000006a4  00000738  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000002  00802004  00802004  0000073c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000073c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000076c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000148  00000000  00000000  000007b0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000248a  00000000  00000000  000008f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000091a  00000000  00000000  00002d82  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000287d  00000000  00000000  0000369c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000278  00000000  00000000  00005f1c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00027ad7  00000000  00000000  00006194  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000aa6  00000000  00000000  0002dc6b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000c8  00000000  00000000  0002e711  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macro  00001538  00000000  00000000  0002e7d9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	fd c0       	rjmp	.+506    	; 0x1fc <__ctors_end>
+   2:	00 00       	nop
+   4:	16 c1       	rjmp	.+556    	; 0x232 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	14 c1       	rjmp	.+552    	; 0x232 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	12 c1       	rjmp	.+548    	; 0x232 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	10 c1       	rjmp	.+544    	; 0x232 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	0e c1       	rjmp	.+540    	; 0x232 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	0c c1       	rjmp	.+536    	; 0x232 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	0a c1       	rjmp	.+532    	; 0x232 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	08 c1       	rjmp	.+528    	; 0x232 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	06 c1       	rjmp	.+524    	; 0x232 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	04 c1       	rjmp	.+520    	; 0x232 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	02 c1       	rjmp	.+516    	; 0x232 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	00 c1       	rjmp	.+512    	; 0x232 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	fe c0       	rjmp	.+508    	; 0x232 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	fc c0       	rjmp	.+504    	; 0x232 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	fa c0       	rjmp	.+500    	; 0x232 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	f8 c0       	rjmp	.+496    	; 0x232 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	f6 c0       	rjmp	.+492    	; 0x232 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	f4 c0       	rjmp	.+488    	; 0x232 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	f2 c0       	rjmp	.+484    	; 0x232 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	f0 c0       	rjmp	.+480    	; 0x232 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	ee c0       	rjmp	.+476    	; 0x232 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	ec c0       	rjmp	.+472    	; 0x232 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	ea c0       	rjmp	.+468    	; 0x232 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	e8 c0       	rjmp	.+464    	; 0x232 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	e6 c0       	rjmp	.+460    	; 0x232 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	e4 c0       	rjmp	.+456    	; 0x232 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	e2 c0       	rjmp	.+452    	; 0x232 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	e0 c0       	rjmp	.+448    	; 0x232 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	de c0       	rjmp	.+444    	; 0x232 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	dc c0       	rjmp	.+440    	; 0x232 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	da c0       	rjmp	.+436    	; 0x232 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	d8 c0       	rjmp	.+432    	; 0x232 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	d6 c0       	rjmp	.+428    	; 0x232 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	d4 c0       	rjmp	.+424    	; 0x232 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	d2 c0       	rjmp	.+420    	; 0x232 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	d0 c0       	rjmp	.+416    	; 0x232 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	ce c0       	rjmp	.+412    	; 0x232 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	cc c0       	rjmp	.+408    	; 0x232 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	ca c0       	rjmp	.+404    	; 0x232 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	c8 c0       	rjmp	.+400    	; 0x232 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	c6 c0       	rjmp	.+396    	; 0x232 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	c4 c0       	rjmp	.+392    	; 0x232 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	03 c2       	rjmp	.+1030   	; 0x4b4 <__vector_43>
+  ae:	00 00       	nop
+  b0:	56 c2       	rjmp	.+1196   	; 0x55e <__vector_44>
+  b2:	00 00       	nop
+  b4:	be c0       	rjmp	.+380    	; 0x232 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	bc c0       	rjmp	.+376    	; 0x232 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	ba c0       	rjmp	.+372    	; 0x232 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	b8 c0       	rjmp	.+368    	; 0x232 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	b6 c0       	rjmp	.+364    	; 0x232 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	b4 c0       	rjmp	.+360    	; 0x232 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	b2 c0       	rjmp	.+356    	; 0x232 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	b0 c0       	rjmp	.+352    	; 0x232 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	ae c0       	rjmp	.+348    	; 0x232 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	ac c0       	rjmp	.+344    	; 0x232 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	aa c0       	rjmp	.+340    	; 0x232 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	a8 c0       	rjmp	.+336    	; 0x232 <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	a6 c0       	rjmp	.+332    	; 0x232 <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	a4 c0       	rjmp	.+328    	; 0x232 <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	a2 c0       	rjmp	.+324    	; 0x232 <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	a0 c0       	rjmp	.+320    	; 0x232 <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	9e c0       	rjmp	.+316    	; 0x232 <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	9c c0       	rjmp	.+312    	; 0x232 <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	9a c0       	rjmp	.+308    	; 0x232 <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	98 c0       	rjmp	.+304    	; 0x232 <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	96 c0       	rjmp	.+300    	; 0x232 <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	94 c0       	rjmp	.+296    	; 0x232 <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	92 c0       	rjmp	.+292    	; 0x232 <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	90 c0       	rjmp	.+288    	; 0x232 <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	8e c0       	rjmp	.+284    	; 0x232 <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	8c c0       	rjmp	.+280    	; 0x232 <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	8a c0       	rjmp	.+276    	; 0x232 <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	88 c0       	rjmp	.+272    	; 0x232 <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	86 c0       	rjmp	.+268    	; 0x232 <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	84 c0       	rjmp	.+264    	; 0x232 <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	82 c0       	rjmp	.+260    	; 0x232 <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	80 c0       	rjmp	.+256    	; 0x232 <__bad_interrupt>
+ 132:	00 00       	nop
+ 134:	7e c0       	rjmp	.+252    	; 0x232 <__bad_interrupt>
+ 136:	00 00       	nop
+ 138:	7c c0       	rjmp	.+248    	; 0x232 <__bad_interrupt>
+ 13a:	00 00       	nop
+ 13c:	7a c0       	rjmp	.+244    	; 0x232 <__bad_interrupt>
+ 13e:	00 00       	nop
+ 140:	78 c0       	rjmp	.+240    	; 0x232 <__bad_interrupt>
+ 142:	00 00       	nop
+ 144:	76 c0       	rjmp	.+236    	; 0x232 <__bad_interrupt>
+ 146:	00 00       	nop
+ 148:	74 c0       	rjmp	.+232    	; 0x232 <__bad_interrupt>
+ 14a:	00 00       	nop
+ 14c:	72 c0       	rjmp	.+228    	; 0x232 <__bad_interrupt>
+ 14e:	00 00       	nop
+ 150:	70 c0       	rjmp	.+224    	; 0x232 <__bad_interrupt>
+ 152:	00 00       	nop
+ 154:	6e c0       	rjmp	.+220    	; 0x232 <__bad_interrupt>
+ 156:	00 00       	nop
+ 158:	6c c0       	rjmp	.+216    	; 0x232 <__bad_interrupt>
+ 15a:	00 00       	nop
+ 15c:	6a c0       	rjmp	.+212    	; 0x232 <__bad_interrupt>
+ 15e:	00 00       	nop
+ 160:	68 c0       	rjmp	.+208    	; 0x232 <__bad_interrupt>
+ 162:	00 00       	nop
+ 164:	66 c0       	rjmp	.+204    	; 0x232 <__bad_interrupt>
+ 166:	00 00       	nop
+ 168:	64 c0       	rjmp	.+200    	; 0x232 <__bad_interrupt>
+ 16a:	00 00       	nop
+ 16c:	62 c0       	rjmp	.+196    	; 0x232 <__bad_interrupt>
+ 16e:	00 00       	nop
+ 170:	60 c0       	rjmp	.+192    	; 0x232 <__bad_interrupt>
+ 172:	00 00       	nop
+ 174:	5e c0       	rjmp	.+188    	; 0x232 <__bad_interrupt>
+ 176:	00 00       	nop
+ 178:	5c c0       	rjmp	.+184    	; 0x232 <__bad_interrupt>
+ 17a:	00 00       	nop
+ 17c:	5a c0       	rjmp	.+180    	; 0x232 <__bad_interrupt>
+ 17e:	00 00       	nop
+ 180:	58 c0       	rjmp	.+176    	; 0x232 <__bad_interrupt>
+ 182:	00 00       	nop
+ 184:	56 c0       	rjmp	.+172    	; 0x232 <__bad_interrupt>
+ 186:	00 00       	nop
+ 188:	54 c0       	rjmp	.+168    	; 0x232 <__bad_interrupt>
+ 18a:	00 00       	nop
+ 18c:	52 c0       	rjmp	.+164    	; 0x232 <__bad_interrupt>
+ 18e:	00 00       	nop
+ 190:	50 c0       	rjmp	.+160    	; 0x232 <__bad_interrupt>
+ 192:	00 00       	nop
+ 194:	4e c0       	rjmp	.+156    	; 0x232 <__bad_interrupt>
+ 196:	00 00       	nop
+ 198:	4c c0       	rjmp	.+152    	; 0x232 <__bad_interrupt>
+ 19a:	00 00       	nop
+ 19c:	4a c0       	rjmp	.+148    	; 0x232 <__bad_interrupt>
+ 19e:	00 00       	nop
+ 1a0:	48 c0       	rjmp	.+144    	; 0x232 <__bad_interrupt>
+ 1a2:	00 00       	nop
+ 1a4:	46 c0       	rjmp	.+140    	; 0x232 <__bad_interrupt>
+ 1a6:	00 00       	nop
+ 1a8:	44 c0       	rjmp	.+136    	; 0x232 <__bad_interrupt>
+ 1aa:	00 00       	nop
+ 1ac:	42 c0       	rjmp	.+132    	; 0x232 <__bad_interrupt>
+ 1ae:	00 00       	nop
+ 1b0:	40 c0       	rjmp	.+128    	; 0x232 <__bad_interrupt>
+ 1b2:	00 00       	nop
+ 1b4:	3e c0       	rjmp	.+124    	; 0x232 <__bad_interrupt>
+ 1b6:	00 00       	nop
+ 1b8:	3c c0       	rjmp	.+120    	; 0x232 <__bad_interrupt>
+ 1ba:	00 00       	nop
+ 1bc:	3a c0       	rjmp	.+116    	; 0x232 <__bad_interrupt>
+ 1be:	00 00       	nop
+ 1c0:	38 c0       	rjmp	.+112    	; 0x232 <__bad_interrupt>
+ 1c2:	00 00       	nop
+ 1c4:	36 c0       	rjmp	.+108    	; 0x232 <__bad_interrupt>
+ 1c6:	00 00       	nop
+ 1c8:	34 c0       	rjmp	.+104    	; 0x232 <__bad_interrupt>
+ 1ca:	00 00       	nop
+ 1cc:	32 c0       	rjmp	.+100    	; 0x232 <__bad_interrupt>
+ 1ce:	00 00       	nop
+ 1d0:	30 c0       	rjmp	.+96     	; 0x232 <__bad_interrupt>
+ 1d2:	00 00       	nop
+ 1d4:	2e c0       	rjmp	.+92     	; 0x232 <__bad_interrupt>
+ 1d6:	00 00       	nop
+ 1d8:	2c c0       	rjmp	.+88     	; 0x232 <__bad_interrupt>
+ 1da:	00 00       	nop
+ 1dc:	2a c0       	rjmp	.+84     	; 0x232 <__bad_interrupt>
+ 1de:	00 00       	nop
+ 1e0:	28 c0       	rjmp	.+80     	; 0x232 <__bad_interrupt>
+ 1e2:	00 00       	nop
+ 1e4:	26 c0       	rjmp	.+76     	; 0x232 <__bad_interrupt>
+ 1e6:	00 00       	nop
+ 1e8:	24 c0       	rjmp	.+72     	; 0x232 <__bad_interrupt>
+ 1ea:	00 00       	nop
+ 1ec:	22 c0       	rjmp	.+68     	; 0x232 <__bad_interrupt>
+ 1ee:	00 00       	nop
+ 1f0:	20 c0       	rjmp	.+64     	; 0x232 <__bad_interrupt>
+ 1f2:	00 00       	nop
+ 1f4:	1e c0       	rjmp	.+60     	; 0x232 <__bad_interrupt>
+ 1f6:	00 00       	nop
+ 1f8:	1c c0       	rjmp	.+56     	; 0x232 <__bad_interrupt>
+	...
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	cd bf       	out	0x3d, r28	; 61
+ 204:	df e2       	ldi	r29, 0x2F	; 47
+ 206:	de bf       	out	0x3e, r29	; 62
+
+00000208 <__do_copy_data>:
+ 208:	10 e2       	ldi	r17, 0x20	; 32
+ 20a:	a0 e0       	ldi	r26, 0x00	; 0
+ 20c:	b0 e2       	ldi	r27, 0x20	; 32
+ 20e:	e4 ea       	ldi	r30, 0xA4	; 164
+ 210:	f6 e0       	ldi	r31, 0x06	; 6
+ 212:	02 c0       	rjmp	.+4      	; 0x218 <__do_copy_data+0x10>
+ 214:	05 90       	lpm	r0, Z+
+ 216:	0d 92       	st	X+, r0
+ 218:	a4 30       	cpi	r26, 0x04	; 4
+ 21a:	b1 07       	cpc	r27, r17
+ 21c:	d9 f7       	brne	.-10     	; 0x214 <__do_copy_data+0xc>
+
+0000021e <__do_clear_bss>:
+ 21e:	20 e2       	ldi	r18, 0x20	; 32
+ 220:	a4 e0       	ldi	r26, 0x04	; 4
+ 222:	b0 e2       	ldi	r27, 0x20	; 32
+ 224:	01 c0       	rjmp	.+2      	; 0x228 <.do_clear_bss_start>
+
+00000226 <.do_clear_bss_loop>:
+ 226:	1d 92       	st	X+, r1
+
+00000228 <.do_clear_bss_start>:
+ 228:	a6 30       	cpi	r26, 0x06	; 6
+ 22a:	b2 07       	cpc	r27, r18
+ 22c:	e1 f7       	brne	.-8      	; 0x226 <.do_clear_bss_loop>
+ 22e:	05 d2       	rcall	.+1034   	; 0x63a <main>
+ 230:	37 c2       	rjmp	.+1134   	; 0x6a0 <_exit>
+
+00000232 <__bad_interrupt>:
+ 232:	e6 ce       	rjmp	.-564    	; 0x0 <__vectors>
+
+00000234 <spi_master_init>:
+ *
+ * \param spi       Base address of the SPI instance.
+ *
+ */
+void spi_master_init(SPI_t *spi)
+{
+ 234:	cf 93       	push	r28
+ 236:	df 93       	push	r29
+ 238:	ec 01       	movw	r28, r24
+	if ((uint16_t)spi == (uint16_t)&SPIB) {
+		sysclk_enable_module(SYSCLK_PORT_B, PR_SPI_bm);
+	}
+#endif
+#ifdef SPIC
+	if ((uint16_t)spi == (uint16_t)&SPIC) {
+ 23a:	c0 3c       	cpi	r28, 0xC0	; 192
+ 23c:	28 e0       	ldi	r18, 0x08	; 8
+ 23e:	d2 07       	cpc	r29, r18
+ 240:	21 f4       	brne	.+8      	; 0x24a <spi_master_init+0x16>
+		sysclk_enable_module(SYSCLK_PORT_C, PR_SPI_bm);
+ 242:	68 e0       	ldi	r22, 0x08	; 8
+ 244:	83 e0       	ldi	r24, 0x03	; 3
+ 246:	c6 d0       	rcall	.+396    	; 0x3d4 <sysclk_enable_module>
+ 248:	06 c0       	rjmp	.+12     	; 0x256 <spi_master_init+0x22>
+	}
+#endif
+#ifdef SPID
+	if ((uint16_t)spi == (uint16_t)&SPID) {
+ 24a:	80 3c       	cpi	r24, 0xC0	; 192
+ 24c:	99 40       	sbci	r25, 0x09	; 9
+ 24e:	19 f4       	brne	.+6      	; 0x256 <spi_master_init+0x22>
+		sysclk_enable_module(SYSCLK_PORT_D, PR_SPI_bm);
+ 250:	68 e0       	ldi	r22, 0x08	; 8
+ 252:	84 e0       	ldi	r24, 0x04	; 4
+ 254:	bf d0       	rcall	.+382    	; 0x3d4 <sysclk_enable_module>
+ *
+ * \warning This may cause data loss if used on a slave SPI.
+ */
+static inline void spi_enable_master_mode(SPI_t *spi)
+{
+	spi->CTRL |= SPI_MASTER_bm;
+ 256:	88 81       	ld	r24, Y
+ 258:	80 61       	ori	r24, 0x10	; 16
+ 25a:	88 83       	st	Y, r24
+	if ((uint16_t)spi == (uint16_t)&SPIF) {
+		sysclk_enable_module(SYSCLK_PORT_F, PR_SPI_bm);
+	}
+#endif
+	spi_enable_master_mode(spi);
+}
+ 25c:	df 91       	pop	r29
+ 25e:	cf 91       	pop	r28
+ 260:	08 95       	ret
+
+00000262 <spi_master_setup_device>:
+ * \param sel_id    Board specific select id
+ */
+void spi_master_setup_device(SPI_t *spi, struct spi_device *device,
+		spi_flags_t flags, uint32_t baud_rate,
+		board_spi_select_id_t sel_id)
+{
+ 262:	ef 92       	push	r14
+ 264:	ff 92       	push	r15
+ 266:	0f 93       	push	r16
+ 268:	1f 93       	push	r17
+ 26a:	cf 93       	push	r28
+ 26c:	7c 01       	movw	r14, r24
+ 26e:	c4 2f       	mov	r28, r20
+ 270:	b9 01       	movw	r22, r18
+ 272:	a8 01       	movw	r20, r16
+	if (spi_xmega_set_baud_div(spi, baud_rate, sysclk_get_cpu_hz()) < 0) {
+ 274:	00 e0       	ldi	r16, 0x00	; 0
+ 276:	1c e6       	ldi	r17, 0x6C	; 108
+ 278:	2c ed       	ldi	r18, 0xDC	; 220
+ 27a:	32 e0       	ldi	r19, 0x02	; 2
+ 27c:	b7 d0       	rcall	.+366    	; 0x3ec <spi_xmega_set_baud_div>
+ 27e:	88 23       	and	r24, r24
+ 280:	44 f0       	brlt	.+16     	; 0x292 <spi_master_setup_device+0x30>
+		Assert(false);
+		return;
+	}
+
+	/* Clear any set SPI mode flags and set them to the user-specified mode */
+	spi->CTRL = (spi->CTRL & ~SPI_MODE_gm) |
+ 282:	f7 01       	movw	r30, r14
+ 284:	90 81       	ld	r25, Z
+			((flags << SPI_MODE_gp) & SPI_MODE_gm);
+ 286:	cc 0f       	add	r28, r28
+ 288:	cc 0f       	add	r28, r28
+		Assert(false);
+		return;
+	}
+
+	/* Clear any set SPI mode flags and set them to the user-specified mode */
+	spi->CTRL = (spi->CTRL & ~SPI_MODE_gm) |
+ 28a:	cc 70       	andi	r28, 0x0C	; 12
+ 28c:	93 7f       	andi	r25, 0xF3	; 243
+ 28e:	c9 2b       	or	r28, r25
+ 290:	c0 83       	st	Z, r28
+			((flags << SPI_MODE_gp) & SPI_MODE_gm);
+}
+ 292:	cf 91       	pop	r28
+ 294:	1f 91       	pop	r17
+ 296:	0f 91       	pop	r16
+ 298:	ff 90       	pop	r15
+ 29a:	ef 90       	pop	r14
+ 29c:	08 95       	ret
+
+0000029e <spi_write_packet>:
+ * \param len    Length of data
+ *
+ * \pre SPI device must be selected with spi_select_device() first
+ */
+status_code_t spi_write_packet(SPI_t *spi, const uint8_t *data, size_t len)
+{
+ 29e:	fc 01       	movw	r30, r24
+ 2a0:	db 01       	movw	r26, r22
+ 2a2:	46 0f       	add	r20, r22
+ 2a4:	57 1f       	adc	r21, r23
+	while (len--) {
+ 2a6:	05 c0       	rjmp	.+10     	; 0x2b2 <spi_write_packet+0x14>
+		spi_write_single(spi, *data++);
+ 2a8:	8d 91       	ld	r24, X+
+ * \param data The data byte to be loaded
+ *
+ */
+static inline void spi_put(SPI_t *spi, uint8_t data)
+{
+	spi->DATA = data;
+ 2aa:	83 83       	std	Z+3, r24	; 0x03
+ *
+ * \return \c 1 if the SPI Receive Holding Register is full, otherwise \c 0.
+ */
+static inline bool spi_is_tx_ok(SPI_t *spi)
+{
+	return spi->STATUS & SPI_IF_bm ? true : false;
+ 2ac:	92 81       	ldd	r25, Z+2	; 0x02
+		
+		while (!spi_is_rx_full(spi)) {
+ 2ae:	99 23       	and	r25, r25
+ 2b0:	ec f7       	brge	.-6      	; 0x2ac <spi_write_packet+0xe>
+ *
+ * \pre SPI device must be selected with spi_select_device() first
+ */
+status_code_t spi_write_packet(SPI_t *spi, const uint8_t *data, size_t len)
+{
+	while (len--) {
+ 2b2:	a4 17       	cp	r26, r20
+ 2b4:	b5 07       	cpc	r27, r21
+ 2b6:	c1 f7       	brne	.-16     	; 0x2a8 <spi_write_packet+0xa>
+		while (!spi_is_rx_full(spi)) {
+		}
+	}
+	
+	return STATUS_OK;
+}
+ 2b8:	80 e0       	ldi	r24, 0x00	; 0
+ 2ba:	08 95       	ret
+
+000002bc <spi_read_packet>:
+ * \param len    Length of data
+ *
+ * \pre SPI device must be selected with spi_select_device() first
+ */
+status_code_t spi_read_packet(SPI_t *spi, uint8_t *data, size_t len)
+{
+ 2bc:	fc 01       	movw	r30, r24
+ 2be:	db 01       	movw	r26, r22
+	while (len--) {
+ 2c0:	41 15       	cp	r20, r1
+ 2c2:	51 05       	cpc	r21, r1
+ 2c4:	61 f0       	breq	.+24     	; 0x2de <spi_read_packet+0x22>
+ 2c6:	46 0f       	add	r20, r22
+ 2c8:	57 1f       	adc	r21, r23
+ * \param data The data byte to be loaded
+ *
+ */
+static inline void spi_put(SPI_t *spi, uint8_t data)
+{
+	spi->DATA = data;
+ 2ca:	2f ef       	ldi	r18, 0xFF	; 255
+ 2cc:	23 83       	std	Z+3, r18	; 0x03
+ *
+ * \return \c 1 if the SPI Receive Holding Register is full, otherwise \c 0.
+ */
+static inline bool spi_is_tx_ok(SPI_t *spi)
+{
+	return spi->STATUS & SPI_IF_bm ? true : false;
+ 2ce:	92 81       	ldd	r25, Z+2	; 0x02
+		spi_write_single(spi,CONFIG_SPI_MASTER_DUMMY); //Dummy write
+
+		while (!spi_is_rx_full(spi)) {
+ 2d0:	99 23       	and	r25, r25
+ 2d2:	ec f7       	brge	.-6      	; 0x2ce <spi_read_packet+0x12>
+ * \return The data byte
+ *
+ */
+static inline uint8_t spi_get(SPI_t *spi)
+{
+	return spi->DATA;
+ 2d4:	83 81       	ldd	r24, Z+3	; 0x03
+ * \param data Pointer to the data byte where to store the received data.
+ *
+ */
+inline static void spi_read_single(SPI_t *spi, uint8_t *data)
+{
+	*data=spi_get(spi);
+ 2d6:	8d 93       	st	X+, r24
+ *
+ * \pre SPI device must be selected with spi_select_device() first
+ */
+status_code_t spi_read_packet(SPI_t *spi, uint8_t *data, size_t len)
+{
+	while (len--) {
+ 2d8:	a4 17       	cp	r26, r20
+ 2da:	b5 07       	cpc	r27, r21
+ 2dc:	b9 f7       	brne	.-18     	; 0x2cc <spi_read_packet+0x10>
+		spi_read_single(spi, data);
+		data++;
+	}
+	
+	return STATUS_OK;
+}
+ 2de:	80 e0       	ldi	r24, 0x00	; 0
+ 2e0:	08 95       	ret
+
+000002e2 <spi_select_device>:
+ * \param device SPI device
+ *
+ */
+void spi_select_device(SPI_t *spi, struct spi_device *device)
+{
+	ioport_set_pin_low(device->id);
+ 2e2:	fb 01       	movw	r30, r22
+ 2e4:	80 81       	ld	r24, Z
+typedef uint8_t ioport_port_t;
+typedef uint8_t ioport_port_mask_t;
+
+__always_inline static ioport_port_t arch_ioport_pin_to_port_id(ioport_pin_t pin)
+{
+	return pin >> 3;
+ 2e6:	e8 2f       	mov	r30, r24
+ 2e8:	e6 95       	lsr	r30
+ 2ea:	e6 95       	lsr	r30
+ 2ec:	e6 95       	lsr	r30
+}
+
+__always_inline static PORT_t *arch_ioport_port_to_base(ioport_port_t port)
+{
+	return (PORT_t *)((uintptr_t)IOPORT_BASE_ADDRESS +
+	       (port * IOPORT_PORT_OFFSET));
+ 2ee:	40 e2       	ldi	r20, 0x20	; 32
+ 2f0:	e4 9f       	mul	r30, r20
+ 2f2:	f0 01       	movw	r30, r0
+ 2f4:	11 24       	eor	r1, r1
+	return pin >> 3;
+}
+
+__always_inline static PORT_t *arch_ioport_port_to_base(ioport_port_t port)
+{
+	return (PORT_t *)((uintptr_t)IOPORT_BASE_ADDRESS +
+ 2f6:	fa 5f       	subi	r31, 0xFA	; 250
+}
+
+__always_inline static ioport_port_mask_t arch_ioport_pin_to_mask(
+		ioport_pin_t pin)
+{
+	return 1U << (pin & 0x07);
+ 2f8:	87 70       	andi	r24, 0x07	; 7
+ 2fa:	21 e0       	ldi	r18, 0x01	; 1
+ 2fc:	30 e0       	ldi	r19, 0x00	; 0
+ 2fe:	a9 01       	movw	r20, r18
+ 300:	02 c0       	rjmp	.+4      	; 0x306 <spi_select_device+0x24>
+ 302:	44 0f       	add	r20, r20
+ 304:	55 1f       	adc	r21, r21
+ 306:	8a 95       	dec	r24
+ 308:	e2 f7       	brpl	.-8      	; 0x302 <spi_select_device+0x20>
+	PORT_t *base = arch_ioport_pin_to_base(pin);
+
+	if (level) {
+		base->OUTSET = arch_ioport_pin_to_mask(pin);
+	} else {
+		base->OUTCLR = arch_ioport_pin_to_mask(pin);
+ 30a:	46 83       	std	Z+6, r20	; 0x06
+ 30c:	08 95       	ret
+
+0000030e <spi_deselect_device>:
+ *
+ * \pre SPI device must be selected with spi_select_device() first
+ */
+void spi_deselect_device(SPI_t *spi, struct spi_device *device)
+{
+	ioport_set_pin_high(device->id);
+ 30e:	fb 01       	movw	r30, r22
+ 310:	80 81       	ld	r24, Z
+typedef uint8_t ioport_port_t;
+typedef uint8_t ioport_port_mask_t;
+
+__always_inline static ioport_port_t arch_ioport_pin_to_port_id(ioport_pin_t pin)
+{
+	return pin >> 3;
+ 312:	e8 2f       	mov	r30, r24
+ 314:	e6 95       	lsr	r30
+ 316:	e6 95       	lsr	r30
+ 318:	e6 95       	lsr	r30
+}
+
+__always_inline static PORT_t *arch_ioport_port_to_base(ioport_port_t port)
+{
+	return (PORT_t *)((uintptr_t)IOPORT_BASE_ADDRESS +
+	       (port * IOPORT_PORT_OFFSET));
+ 31a:	40 e2       	ldi	r20, 0x20	; 32
+ 31c:	e4 9f       	mul	r30, r20
+ 31e:	f0 01       	movw	r30, r0
+ 320:	11 24       	eor	r1, r1
+	return pin >> 3;
+}
+
+__always_inline static PORT_t *arch_ioport_port_to_base(ioport_port_t port)
+{
+	return (PORT_t *)((uintptr_t)IOPORT_BASE_ADDRESS +
+ 322:	fa 5f       	subi	r31, 0xFA	; 250
+}
+
+__always_inline static ioport_port_mask_t arch_ioport_pin_to_mask(
+		ioport_pin_t pin)
+{
+	return 1U << (pin & 0x07);
+ 324:	87 70       	andi	r24, 0x07	; 7
+ 326:	21 e0       	ldi	r18, 0x01	; 1
+ 328:	30 e0       	ldi	r19, 0x00	; 0
+ 32a:	a9 01       	movw	r20, r18
+ 32c:	02 c0       	rjmp	.+4      	; 0x332 <spi_deselect_device+0x24>
+ 32e:	44 0f       	add	r20, r20
+ 330:	55 1f       	adc	r21, r21
+ 332:	8a 95       	dec	r24
+ 334:	e2 f7       	brpl	.-8      	; 0x32e <spi_deselect_device+0x20>
+		bool level)
+{
+	PORT_t *base = arch_ioport_pin_to_base(pin);
+
+	if (level) {
+		base->OUTSET = arch_ioport_pin_to_mask(pin);
+ 336:	45 83       	std	Z+5, r20	; 0x05
+ 338:	08 95       	ret
+
+0000033a <ioport_configure_port_pin>:
+#include "ioport_compat.h"
+
+#if defined(IOPORT_XMEGA_COMPAT)
+void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
+		port_pin_flags_t flags)
+{
+ 33a:	cf 93       	push	r28
+ 33c:	df 93       	push	r29
+ 33e:	fc 01       	movw	r30, r24
+ 340:	70 96       	adiw	r30, 0x10	; 16
+	uint8_t pin;
+
+	for (pin = 0; pin < 8; pin++) {
+		if (pin_mask & (1 << pin)) {
+			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
+ 342:	20 e0       	ldi	r18, 0x00	; 0
+ 344:	30 e0       	ldi	r19, 0x00	; 0
+		port_pin_flags_t flags)
+{
+	uint8_t pin;
+
+	for (pin = 0; pin < 8; pin++) {
+		if (pin_mask & (1 << pin)) {
+ 346:	c6 2f       	mov	r28, r22
+ 348:	d0 e0       	ldi	r29, 0x00	; 0
+ 34a:	de 01       	movw	r26, r28
+ 34c:	02 2e       	mov	r0, r18
+ 34e:	02 c0       	rjmp	.+4      	; 0x354 <ioport_configure_port_pin+0x1a>
+ 350:	b5 95       	asr	r27
+ 352:	a7 95       	ror	r26
+ 354:	0a 94       	dec	r0
+ 356:	e2 f7       	brpl	.-8      	; 0x350 <ioport_configure_port_pin+0x16>
+ 358:	a0 fd       	sbrc	r26, 0
+			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
+ 35a:	50 83       	st	Z, r21
+ 35c:	2f 5f       	subi	r18, 0xFF	; 255
+ 35e:	3f 4f       	sbci	r19, 0xFF	; 255
+ 360:	31 96       	adiw	r30, 0x01	; 1
+void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
+		port_pin_flags_t flags)
+{
+	uint8_t pin;
+
+	for (pin = 0; pin < 8; pin++) {
+ 362:	28 30       	cpi	r18, 0x08	; 8
+ 364:	31 05       	cpc	r19, r1
+ 366:	89 f7       	brne	.-30     	; 0x34a <ioport_configure_port_pin+0x10>
+		if (pin_mask & (1 << pin)) {
+			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
+		}
+	}
+	/* Select direction and initial pin state */
+	if (flags & IOPORT_DIR_OUTPUT) {
+ 368:	40 ff       	sbrs	r20, 0
+ 36a:	0a c0       	rjmp	.+20     	; 0x380 <ioport_configure_port_pin+0x46>
+		if (flags & IOPORT_INIT_HIGH) {
+ 36c:	41 ff       	sbrs	r20, 1
+ 36e:	03 c0       	rjmp	.+6      	; 0x376 <ioport_configure_port_pin+0x3c>
+			*((uint8_t *)port + PORT_OUTSET) = pin_mask;
+ 370:	fc 01       	movw	r30, r24
+ 372:	65 83       	std	Z+5, r22	; 0x05
+ 374:	02 c0       	rjmp	.+4      	; 0x37a <ioport_configure_port_pin+0x40>
+		} else {
+			*((uint8_t *)port + PORT_OUTCLR) = pin_mask;
+ 376:	fc 01       	movw	r30, r24
+ 378:	66 83       	std	Z+6, r22	; 0x06
+		}
+
+		*((uint8_t *)port + PORT_DIRSET) = pin_mask;
+ 37a:	fc 01       	movw	r30, r24
+ 37c:	61 83       	std	Z+1, r22	; 0x01
+ 37e:	02 c0       	rjmp	.+4      	; 0x384 <ioport_configure_port_pin+0x4a>
+	} else {
+		*((uint8_t *)port + PORT_DIRCLR) = pin_mask;
+ 380:	fc 01       	movw	r30, r24
+ 382:	62 83       	std	Z+2, r22	; 0x02
+	}
+}
+ 384:	df 91       	pop	r29
+ 386:	cf 91       	pop	r28
+ 388:	08 95       	ret
+
+0000038a <sysclk_init>:
+#endif
+	bool need_rc2mhz = false;
+
+	/* Turn off all peripheral clocks that can be turned off. */
+	for (i = 0; i <= SYSCLK_PORT_F; i++) {
+		*(reg++) = 0xff;
+ 38a:	8f ef       	ldi	r24, 0xFF	; 255
+ 38c:	80 93 70 00 	sts	0x0070, r24
+ 390:	80 93 71 00 	sts	0x0071, r24
+ 394:	80 93 72 00 	sts	0x0072, r24
+ 398:	80 93 73 00 	sts	0x0073, r24
+ 39c:	80 93 74 00 	sts	0x0074, r24
+ 3a0:	80 93 75 00 	sts	0x0075, r24
+ 3a4:	80 93 76 00 	sts	0x0076, r24
+
+static inline bool pll_is_locked(unsigned int pll_id)
+{
+	Assert(pll_id < NR_PLLS);
+
+	return OSC.STATUS & OSC_PLLRDY_bm;
+ 3a8:	80 91 51 00 	lds	r24, 0x0051
+
+static inline void pll_enable_config_defaults(unsigned int pll_id)
+{
+	struct pll_config pllcfg;
+
+	if (pll_is_locked(pll_id)) {
+ 3ac:	84 fd       	sbrc	r24, 4
+ 3ae:	0d c0       	rjmp	.+26     	; 0x3ca <sysclk_init+0x40>
+
+typedef uint8_t irqflags_t;
+
+static inline irqflags_t cpu_irq_save(void)
+{
+	irqflags_t flags = SREG;
+ 3b0:	9f b7       	in	r25, 0x3f	; 63
+	cpu_irq_disable();
+ 3b2:	f8 94       	cli
+static inline void pll_config_write(const struct pll_config *cfg,
+		unsigned int pll_id)
+{
+	Assert(pll_id < NR_PLLS);
+
+	OSC.PLLCTRL = cfg->ctrl;
+ 3b4:	e0 e5       	ldi	r30, 0x50	; 80
+ 3b6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3b8:	88 e1       	ldi	r24, 0x18	; 24
+ 3ba:	85 83       	std	Z+5, r24	; 0x05
+
+	Assert(pll_id < NR_PLLS);
+
+	flags = cpu_irq_save();
+	pll_config_write(cfg, pll_id);
+	OSC.CTRL |= OSC_PLLEN_bm;
+ 3bc:	80 81       	ld	r24, Z
+ 3be:	80 61       	ori	r24, 0x10	; 16
+ 3c0:	80 83       	st	Z, r24
+}
+
+static inline void cpu_irq_restore(irqflags_t flags)
+{
+	barrier();
+	SREG = flags;
+ 3c2:	9f bf       	out	0x3f, r25	; 63
+
+static inline bool pll_is_locked(unsigned int pll_id)
+{
+	Assert(pll_id < NR_PLLS);
+
+	return OSC.STATUS & OSC_PLLRDY_bm;
+ 3c4:	81 81       	ldd	r24, Z+1	; 0x01
+	default:
+		Assert(false);
+		break;
+	}
+	pll_enable(&pllcfg, pll_id);
+	while (!pll_is_locked(pll_id));
+ 3c6:	84 ff       	sbrs	r24, 4
+ 3c8:	fd cf       	rjmp	.-6      	; 0x3c4 <sysclk_init+0x3a>
+		default:
+			//unhandled_case(CONFIG_SYSCLK_SOURCE);
+			return;
+		}
+
+		ccp_write_io((uint8_t *)&CLK.CTRL, CONFIG_SYSCLK_SOURCE);
+ 3ca:	64 e0       	ldi	r22, 0x04	; 4
+ 3cc:	80 e4       	ldi	r24, 0x40	; 64
+ 3ce:	90 e0       	ldi	r25, 0x00	; 0
+ 3d0:	54 c0       	rjmp	.+168    	; 0x47a <ccp_write_io>
+ 3d2:	08 95       	ret
+
+000003d4 <sysclk_enable_module>:
+
+typedef uint8_t irqflags_t;
+
+static inline irqflags_t cpu_irq_save(void)
+{
+	irqflags_t flags = SREG;
+ 3d4:	9f b7       	in	r25, 0x3f	; 63
+	cpu_irq_disable();
+ 3d6:	f8 94       	cli
+
+void sysclk_enable_module(enum sysclk_port_id port, uint8_t id)
+{
+	irqflags_t flags = cpu_irq_save();
+
+	*((uint8_t *)&PR.PRGEN + port) &= ~id;
+ 3d8:	e8 2f       	mov	r30, r24
+ 3da:	f0 e0       	ldi	r31, 0x00	; 0
+ 3dc:	e0 59       	subi	r30, 0x90	; 144
+ 3de:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3e0:	60 95       	com	r22
+ 3e2:	80 81       	ld	r24, Z
+ 3e4:	68 23       	and	r22, r24
+ 3e6:	60 83       	st	Z, r22
+}
+
+static inline void cpu_irq_restore(irqflags_t flags)
+{
+	barrier();
+	SREG = flags;
+ 3e8:	9f bf       	out	0x3f, r25	; 63
+ 3ea:	08 95       	ret
+
+000003ec <spi_xmega_set_baud_div>:
+ * \return Status of operation.
+ *   \retval >=0  Success.
+ *   \retval  <0  Error.
+ */
+int8_t spi_xmega_set_baud_div(SPI_t *spi, uint32_t baudrate, uint32_t clkper_hz)
+{
+ 3ec:	cf 92       	push	r12
+ 3ee:	df 92       	push	r13
+ 3f0:	ef 92       	push	r14
+ 3f2:	ff 92       	push	r15
+ 3f4:	0f 93       	push	r16
+ 3f6:	1f 93       	push	r17
+ 3f8:	cf 93       	push	r28
+ 3fa:	df 93       	push	r29
+ 3fc:	ec 01       	movw	r28, r24
+ 3fe:	6a 01       	movw	r12, r20
+ 400:	7b 01       	movw	r14, r22
+ 402:	db 01       	movw	r26, r22
+ 404:	ca 01       	movw	r24, r20
+ 406:	01 97       	sbiw	r24, 0x01	; 1
+ 408:	a1 09       	sbc	r26, r1
+ 40a:	b1 09       	sbc	r27, r1
+
+	/*
+	 * Get wanted divisor rounded up so we don't get speed higher than
+	 * requested baudrate.
+	 */
+	divisor = (clkper_hz + baudrate - 1) / baudrate;
+ 40c:	bc 01       	movw	r22, r24
+ 40e:	cd 01       	movw	r24, r26
+ 410:	60 0f       	add	r22, r16
+ 412:	71 1f       	adc	r23, r17
+ 414:	82 1f       	adc	r24, r18
+ 416:	93 1f       	adc	r25, r19
+ 418:	a7 01       	movw	r20, r14
+ 41a:	96 01       	movw	r18, r12
+ 41c:	1f d1       	rcall	.+574    	; 0x65c <__udivmodsi4>
+
+	if (divisor > 128) {
+ 41e:	21 38       	cpi	r18, 0x81	; 129
+ 420:	31 05       	cpc	r19, r1
+ 422:	41 05       	cpc	r20, r1
+ 424:	51 05       	cpc	r21, r1
+ 426:	f8 f4       	brcc	.+62     	; 0x466 <spi_xmega_set_baud_div+0x7a>
+
+	/*
+	 * For divisor values between the possible ones round up to the closest
+	 * higher one to avoid higher baudrate than requested.
+	 */
+	if (divisor_8bit > 64) {
+ 428:	21 34       	cpi	r18, 0x41	; 65
+ 42a:	60 f4       	brcc	.+24     	; 0x444 <spi_xmega_set_baud_div+0x58>
+		ctrl = SPI_PRESCALER_DIV128_gc;
+	}
+	else if (divisor_8bit > 32) {
+ 42c:	21 32       	cpi	r18, 0x21	; 33
+ 42e:	60 f4       	brcc	.+24     	; 0x448 <spi_xmega_set_baud_div+0x5c>
+		ctrl = SPI_PRESCALER_DIV64_gc;
+	}
+	else if (divisor_8bit > 16) {
+ 430:	21 31       	cpi	r18, 0x11	; 17
+ 432:	60 f4       	brcc	.+24     	; 0x44c <spi_xmega_set_baud_div+0x60>
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV64_gc;
+	}
+	else if (divisor_8bit > 8) {
+ 434:	29 30       	cpi	r18, 0x09	; 9
+ 436:	60 f4       	brcc	.+24     	; 0x450 <spi_xmega_set_baud_div+0x64>
+		ctrl = SPI_PRESCALER_DIV16_gc;
+	}
+	else if (divisor_8bit > 4) {
+ 438:	25 30       	cpi	r18, 0x05	; 5
+ 43a:	60 f4       	brcc	.+24     	; 0x454 <spi_xmega_set_baud_div+0x68>
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV16_gc;
+	}
+	else if (divisor_8bit > 2) {
+ 43c:	23 30       	cpi	r18, 0x03	; 3
+ 43e:	60 f4       	brcc	.+24     	; 0x458 <spi_xmega_set_baud_div+0x6c>
+		ctrl = SPI_PRESCALER_DIV4_gc;
+	}
+	else {
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV4_gc;
+ 440:	80 e8       	ldi	r24, 0x80	; 128
+ 442:	0b c0       	rjmp	.+22     	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	/*
+	 * For divisor values between the possible ones round up to the closest
+	 * higher one to avoid higher baudrate than requested.
+	 */
+	if (divisor_8bit > 64) {
+		ctrl = SPI_PRESCALER_DIV128_gc;
+ 444:	83 e0       	ldi	r24, 0x03	; 3
+ 446:	09 c0       	rjmp	.+18     	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	}
+	else if (divisor_8bit > 32) {
+		ctrl = SPI_PRESCALER_DIV64_gc;
+ 448:	82 e0       	ldi	r24, 0x02	; 2
+ 44a:	07 c0       	rjmp	.+14     	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	}
+	else if (divisor_8bit > 16) {
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV64_gc;
+ 44c:	82 e8       	ldi	r24, 0x82	; 130
+ 44e:	05 c0       	rjmp	.+10     	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	}
+	else if (divisor_8bit > 8) {
+		ctrl = SPI_PRESCALER_DIV16_gc;
+ 450:	81 e0       	ldi	r24, 0x01	; 1
+ 452:	03 c0       	rjmp	.+6      	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	}
+	else if (divisor_8bit > 4) {
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV16_gc;
+ 454:	81 e8       	ldi	r24, 0x81	; 129
+ 456:	01 c0       	rjmp	.+2      	; 0x45a <spi_xmega_set_baud_div+0x6e>
+	}
+	else if (divisor_8bit > 2) {
+		ctrl = SPI_PRESCALER_DIV4_gc;
+ 458:	80 e0       	ldi	r24, 0x00	; 0
+	else {
+		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV4_gc;
+	}
+
+	// Update register and make sure to clear out any leftover bits
+	spi->CTRL = (spi->CTRL & ~(SPI_CLK2X_bm | SPI_PRESCALER_gm)) | ctrl;
+ 45a:	98 81       	ld	r25, Y
+ 45c:	9c 77       	andi	r25, 0x7C	; 124
+ 45e:	98 2b       	or	r25, r24
+ 460:	98 83       	st	Y, r25
+
+	return 1;
+ 462:	81 e0       	ldi	r24, 0x01	; 1
+ 464:	01 c0       	rjmp	.+2      	; 0x468 <spi_xmega_set_baud_div+0x7c>
+	if (divisor > 128) {
+		/*
+		 * Highest possible divisor is 128 so fail since we can't get
+		 * low enough baudrate.
+		 */
+		return -1;
+ 466:	8f ef       	ldi	r24, 0xFF	; 255
+
+	// Update register and make sure to clear out any leftover bits
+	spi->CTRL = (spi->CTRL & ~(SPI_CLK2X_bm | SPI_PRESCALER_gm)) | ctrl;
+
+	return 1;
+}
+ 468:	df 91       	pop	r29
+ 46a:	cf 91       	pop	r28
+ 46c:	1f 91       	pop	r17
+ 46e:	0f 91       	pop	r16
+ 470:	ff 90       	pop	r15
+ 472:	ef 90       	pop	r14
+ 474:	df 90       	pop	r13
+ 476:	cf 90       	pop	r12
+ 478:	08 95       	ret
+
+0000047a <ccp_write_io>:
+
+	PUBLIC_FUNCTION(ccp_write_io)
+
+#if defined(__GNUC__)
+
+	out     RAMPZ, r1               // Reset bits 23:16 of Z
+ 47a:	1b be       	out	0x3b, r1	; 59
+	movw    r30, r24                // Load addr into Z
+ 47c:	fc 01       	movw	r30, r24
+	ldi     r18, CCP_IOREG          // Load magic CCP value
+ 47e:	28 ed       	ldi	r18, 0xD8	; 216
+	out     CCP, r18                // Start CCP handshake
+ 480:	24 bf       	out	0x34, r18	; 52
+	st      Z, r22                  // Write value to I/O register
+ 482:	60 83       	st	Z, r22
+	ret                             // Return to caller
+ 484:	08 95       	ret
+
+00000486 <board_init>:
+#include <asf.h>
+#include <board.h>
+#include <conf_board.h>
+
+void board_init(void)
+{
+ 486:	08 95       	ret
+
+00000488 <pin_config>:
+	}
+}
+void pin_config (void)
+{
+
+	PORTE.DIR=0;
+ 488:	e0 e8       	ldi	r30, 0x80	; 128
+ 48a:	f6 e0       	ldi	r31, 0x06	; 6
+ 48c:	10 82       	st	Z, r1
+	PORTE.PIN0CTRL|=PORT_OPC_PULLUP_gc|PORT_ISC_FALLING_gc;
+ 48e:	80 89       	ldd	r24, Z+16	; 0x10
+ 490:	8a 61       	ori	r24, 0x1A	; 26
+ 492:	80 8b       	std	Z+16, r24	; 0x10
+	PORTE.PIN1CTRL|=PORT_OPC_PULLUP_gc|PORT_ISC_FALLING_gc;
+ 494:	81 89       	ldd	r24, Z+17	; 0x11
+ 496:	8a 61       	ori	r24, 0x1A	; 26
+ 498:	81 8b       	std	Z+17, r24	; 0x11
+
+	PORTA.DIR=0B11;
+ 49a:	a0 e0       	ldi	r26, 0x00	; 0
+ 49c:	b6 e0       	ldi	r27, 0x06	; 6
+ 49e:	83 e0       	ldi	r24, 0x03	; 3
+ 4a0:	8c 93       	st	X, r24
+	PORTA.OUT=0;
+ 4a2:	14 96       	adiw	r26, 0x04	; 4
+ 4a4:	1c 92       	st	X, r1
+	
+	PORTE.INT1MASK = PIN1_bm;
+ 4a6:	82 e0       	ldi	r24, 0x02	; 2
+ 4a8:	83 87       	std	Z+11, r24	; 0x0b
+	PORTE.INT0MASK = PIN0_bm;
+ 4aa:	81 e0       	ldi	r24, 0x01	; 1
+ 4ac:	82 87       	std	Z+10, r24	; 0x0a
+	PORTE.INTCTRL = PORT_INT1LVL_LO_gc|PORT_INT0LVL_LO_gc;
+ 4ae:	85 e0       	ldi	r24, 0x05	; 5
+ 4b0:	81 87       	std	Z+9, r24	; 0x09
+ 4b2:	08 95       	ret
+
+000004b4 <__vector_43>:
+
+}
+ISR (PORTE_INT0_vect)
+{
+ 4b4:	1f 92       	push	r1
+ 4b6:	0f 92       	push	r0
+ 4b8:	0f b6       	in	r0, 0x3f	; 63
+ 4ba:	0f 92       	push	r0
+ 4bc:	11 24       	eor	r1, r1
+ 4be:	2f 93       	push	r18
+ 4c0:	3f 93       	push	r19
+ 4c2:	4f 93       	push	r20
+ 4c4:	5f 93       	push	r21
+ 4c6:	6f 93       	push	r22
+ 4c8:	7f 93       	push	r23
+ 4ca:	8f 93       	push	r24
+ 4cc:	9f 93       	push	r25
+ 4ce:	af 93       	push	r26
+ 4d0:	bf 93       	push	r27
+ 4d2:	ef 93       	push	r30
+ 4d4:	ff 93       	push	r31
+		PORTA.OUTTGL=PIN0_bm;
+ 4d6:	81 e0       	ldi	r24, 0x01	; 1
+ 4d8:	80 93 07 06 	sts	0x0607, r24
+		spi_select_device(&SPIC,&SPI_DEVICE_1);
+ 4dc:	63 e0       	ldi	r22, 0x03	; 3
+ 4de:	70 e2       	ldi	r23, 0x20	; 32
+ 4e0:	80 ec       	ldi	r24, 0xC0	; 192
+ 4e2:	98 e0       	ldi	r25, 0x08	; 8
+ 4e4:	fe de       	rcall	.-516    	; 0x2e2 <spi_select_device>
+		spi_write_packet(&SPIC, OUT1, 1);
+ 4e6:	41 e0       	ldi	r20, 0x01	; 1
+ 4e8:	50 e0       	ldi	r21, 0x00	; 0
+ 4ea:	61 e0       	ldi	r22, 0x01	; 1
+ 4ec:	70 e2       	ldi	r23, 0x20	; 32
+ 4ee:	80 ec       	ldi	r24, 0xC0	; 192
+ 4f0:	98 e0       	ldi	r25, 0x08	; 8
+ 4f2:	d5 de       	rcall	.-598    	; 0x29e <spi_write_packet>
+		spi_read_packet(&SPIC,IN1,1);
+ 4f4:	41 e0       	ldi	r20, 0x01	; 1
+ 4f6:	50 e0       	ldi	r21, 0x00	; 0
+ 4f8:	65 e0       	ldi	r22, 0x05	; 5
+ 4fa:	70 e2       	ldi	r23, 0x20	; 32
+ 4fc:	80 ec       	ldi	r24, 0xC0	; 192
+ 4fe:	98 e0       	ldi	r25, 0x08	; 8
+ 500:	dd de       	rcall	.-582    	; 0x2bc <spi_read_packet>
+		spi_deselect_device(&SPIC,&SPI_DEVICE_1);	
+ 502:	63 e0       	ldi	r22, 0x03	; 3
+ 504:	70 e2       	ldi	r23, 0x20	; 32
+ 506:	80 ec       	ldi	r24, 0xC0	; 192
+ 508:	98 e0       	ldi	r25, 0x08	; 8
+ 50a:	01 df       	rcall	.-510    	; 0x30e <spi_deselect_device>
+		
+		spi_select_device(&SPID,&SPI_DEVICE_2);
+ 50c:	62 e0       	ldi	r22, 0x02	; 2
+ 50e:	70 e2       	ldi	r23, 0x20	; 32
+ 510:	80 ec       	ldi	r24, 0xC0	; 192
+ 512:	99 e0       	ldi	r25, 0x09	; 9
+ 514:	e6 de       	rcall	.-564    	; 0x2e2 <spi_select_device>
+		spi_write_packet(&SPID, OUT2, 1);
+ 516:	41 e0       	ldi	r20, 0x01	; 1
+ 518:	50 e0       	ldi	r21, 0x00	; 0
+ 51a:	60 e0       	ldi	r22, 0x00	; 0
+ 51c:	70 e2       	ldi	r23, 0x20	; 32
+ 51e:	80 ec       	ldi	r24, 0xC0	; 192
+ 520:	99 e0       	ldi	r25, 0x09	; 9
+ 522:	bd de       	rcall	.-646    	; 0x29e <spi_write_packet>
+		spi_read_packet(&SPID,IN2,1);
+ 524:	41 e0       	ldi	r20, 0x01	; 1
+ 526:	50 e0       	ldi	r21, 0x00	; 0
+ 528:	64 e0       	ldi	r22, 0x04	; 4
+ 52a:	70 e2       	ldi	r23, 0x20	; 32
+ 52c:	80 ec       	ldi	r24, 0xC0	; 192
+ 52e:	99 e0       	ldi	r25, 0x09	; 9
+ 530:	c5 de       	rcall	.-630    	; 0x2bc <spi_read_packet>
+		spi_deselect_device(&SPID,&SPI_DEVICE_2);		
+ 532:	62 e0       	ldi	r22, 0x02	; 2
+ 534:	70 e2       	ldi	r23, 0x20	; 32
+ 536:	80 ec       	ldi	r24, 0xC0	; 192
+ 538:	99 e0       	ldi	r25, 0x09	; 9
+ 53a:	e9 de       	rcall	.-558    	; 0x30e <spi_deselect_device>
+
+}
+ 53c:	ff 91       	pop	r31
+ 53e:	ef 91       	pop	r30
+ 540:	bf 91       	pop	r27
+ 542:	af 91       	pop	r26
+ 544:	9f 91       	pop	r25
+ 546:	8f 91       	pop	r24
+ 548:	7f 91       	pop	r23
+ 54a:	6f 91       	pop	r22
+ 54c:	5f 91       	pop	r21
+ 54e:	4f 91       	pop	r20
+ 550:	3f 91       	pop	r19
+ 552:	2f 91       	pop	r18
+ 554:	0f 90       	pop	r0
+ 556:	0f be       	out	0x3f, r0	; 63
+ 558:	0f 90       	pop	r0
+ 55a:	1f 90       	pop	r1
+ 55c:	18 95       	reti
+
+0000055e <__vector_44>:
+
+ISR (PORTE_INT1_vect)
+{
+ 55e:	1f 92       	push	r1
+ 560:	0f 92       	push	r0
+ 562:	0f b6       	in	r0, 0x3f	; 63
+ 564:	0f 92       	push	r0
+ 566:	11 24       	eor	r1, r1
+	
+}
+ 568:	0f 90       	pop	r0
+ 56a:	0f be       	out	0x3f, r0	; 63
+ 56c:	0f 90       	pop	r0
+ 56e:	1f 90       	pop	r1
+ 570:	18 95       	reti
+
+00000572 <SPI_init>:
+void	SPI_init(void)
+{
+ 572:	cf 92       	push	r12
+ 574:	df 92       	push	r13
+ 576:	ef 92       	push	r14
+ 578:	ff 92       	push	r15
+ 57a:	0f 93       	push	r16
+ 57c:	1f 93       	push	r17
+
+ioport_configure_port_pin(&PORTC, PIN4_bm, IOPORT_PULL_UP | IOPORT_DIR_INPUT);
+ 57e:	40 e0       	ldi	r20, 0x00	; 0
+ 580:	58 e1       	ldi	r21, 0x18	; 24
+ 582:	60 e1       	ldi	r22, 0x10	; 16
+ 584:	80 e4       	ldi	r24, 0x40	; 64
+ 586:	96 e0       	ldi	r25, 0x06	; 6
+ 588:	d8 de       	rcall	.-592    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTC, PIN5_bm, IOPORT_INIT_HIGH | IOPORT_DIR_OUTPUT);
+ 58a:	43 e0       	ldi	r20, 0x03	; 3
+ 58c:	50 e0       	ldi	r21, 0x00	; 0
+ 58e:	60 e2       	ldi	r22, 0x20	; 32
+ 590:	80 e4       	ldi	r24, 0x40	; 64
+ 592:	96 e0       	ldi	r25, 0x06	; 6
+ 594:	d2 de       	rcall	.-604    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTC, PIN6_bm, IOPORT_DIR_INPUT);
+ 596:	40 e0       	ldi	r20, 0x00	; 0
+ 598:	50 e0       	ldi	r21, 0x00	; 0
+ 59a:	60 e4       	ldi	r22, 0x40	; 64
+ 59c:	80 e4       	ldi	r24, 0x40	; 64
+ 59e:	96 e0       	ldi	r25, 0x06	; 6
+ 5a0:	cc de       	rcall	.-616    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTC, PIN7_bm, IOPORT_INIT_HIGH | IOPORT_DIR_OUTPUT);
+ 5a2:	43 e0       	ldi	r20, 0x03	; 3
+ 5a4:	50 e0       	ldi	r21, 0x00	; 0
+ 5a6:	60 e8       	ldi	r22, 0x80	; 128
+ 5a8:	80 e4       	ldi	r24, 0x40	; 64
+ 5aa:	96 e0       	ldi	r25, 0x06	; 6
+ 5ac:	c6 de       	rcall	.-628    	; 0x33a <ioport_configure_port_pin>
+	
+spi_master_init(&SPIC);
+ 5ae:	80 ec       	ldi	r24, 0xC0	; 192
+ 5b0:	98 e0       	ldi	r25, 0x08	; 8
+ 5b2:	40 de       	rcall	.-896    	; 0x234 <spi_master_init>
+spi_master_setup_device(&SPIC, &SPI_DEVICE_1, SPI_MODE_0, 1000000, 0);
+ 5b4:	c1 2c       	mov	r12, r1
+ 5b6:	d1 2c       	mov	r13, r1
+ 5b8:	76 01       	movw	r14, r12
+ 5ba:	00 e4       	ldi	r16, 0x40	; 64
+ 5bc:	12 e4       	ldi	r17, 0x42	; 66
+ 5be:	2f e0       	ldi	r18, 0x0F	; 15
+ 5c0:	30 e0       	ldi	r19, 0x00	; 0
+ 5c2:	40 e0       	ldi	r20, 0x00	; 0
+ 5c4:	63 e0       	ldi	r22, 0x03	; 3
+ 5c6:	70 e2       	ldi	r23, 0x20	; 32
+ 5c8:	80 ec       	ldi	r24, 0xC0	; 192
+ 5ca:	98 e0       	ldi	r25, 0x08	; 8
+ 5cc:	4a de       	rcall	.-876    	; 0x262 <spi_master_setup_device>
+ *
+ * \param spi Base address of the SPI instance.
+ */
+static inline void spi_enable(SPI_t *spi)
+{
+	spi->CTRL |= SPI_ENABLE_bm;
+ 5ce:	e0 ec       	ldi	r30, 0xC0	; 192
+ 5d0:	f8 e0       	ldi	r31, 0x08	; 8
+ 5d2:	80 81       	ld	r24, Z
+ 5d4:	80 64       	ori	r24, 0x40	; 64
+ 5d6:	80 83       	st	Z, r24
+spi_enable(&SPIC);	
+
+
+ioport_configure_port_pin(&PORTD, PIN4_bm, IOPORT_PULL_UP | IOPORT_DIR_INPUT);
+ 5d8:	40 e0       	ldi	r20, 0x00	; 0
+ 5da:	58 e1       	ldi	r21, 0x18	; 24
+ 5dc:	60 e1       	ldi	r22, 0x10	; 16
+ 5de:	80 e6       	ldi	r24, 0x60	; 96
+ 5e0:	96 e0       	ldi	r25, 0x06	; 6
+ 5e2:	ab de       	rcall	.-682    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTD, PIN5_bm, IOPORT_INIT_HIGH | IOPORT_DIR_OUTPUT);
+ 5e4:	43 e0       	ldi	r20, 0x03	; 3
+ 5e6:	50 e0       	ldi	r21, 0x00	; 0
+ 5e8:	60 e2       	ldi	r22, 0x20	; 32
+ 5ea:	80 e6       	ldi	r24, 0x60	; 96
+ 5ec:	96 e0       	ldi	r25, 0x06	; 6
+ 5ee:	a5 de       	rcall	.-694    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTD, PIN6_bm, IOPORT_DIR_INPUT);
+ 5f0:	40 e0       	ldi	r20, 0x00	; 0
+ 5f2:	50 e0       	ldi	r21, 0x00	; 0
+ 5f4:	60 e4       	ldi	r22, 0x40	; 64
+ 5f6:	80 e6       	ldi	r24, 0x60	; 96
+ 5f8:	96 e0       	ldi	r25, 0x06	; 6
+ 5fa:	9f de       	rcall	.-706    	; 0x33a <ioport_configure_port_pin>
+ioport_configure_port_pin(&PORTD, PIN7_bm, IOPORT_INIT_HIGH | IOPORT_DIR_OUTPUT);
+ 5fc:	43 e0       	ldi	r20, 0x03	; 3
+ 5fe:	50 e0       	ldi	r21, 0x00	; 0
+ 600:	60 e8       	ldi	r22, 0x80	; 128
+ 602:	80 e6       	ldi	r24, 0x60	; 96
+ 604:	96 e0       	ldi	r25, 0x06	; 6
+ 606:	99 de       	rcall	.-718    	; 0x33a <ioport_configure_port_pin>
+
+spi_master_init(&SPID);
+ 608:	80 ec       	ldi	r24, 0xC0	; 192
+ 60a:	99 e0       	ldi	r25, 0x09	; 9
+ 60c:	13 de       	rcall	.-986    	; 0x234 <spi_master_init>
+spi_master_setup_device(&SPID, &SPI_DEVICE_2, SPI_MODE_0, 1000000, 0);
+ 60e:	00 e4       	ldi	r16, 0x40	; 64
+ 610:	12 e4       	ldi	r17, 0x42	; 66
+ 612:	2f e0       	ldi	r18, 0x0F	; 15
+ 614:	30 e0       	ldi	r19, 0x00	; 0
+ 616:	40 e0       	ldi	r20, 0x00	; 0
+ 618:	62 e0       	ldi	r22, 0x02	; 2
+ 61a:	70 e2       	ldi	r23, 0x20	; 32
+ 61c:	80 ec       	ldi	r24, 0xC0	; 192
+ 61e:	99 e0       	ldi	r25, 0x09	; 9
+ 620:	20 de       	rcall	.-960    	; 0x262 <spi_master_setup_device>
+ 622:	e0 ec       	ldi	r30, 0xC0	; 192
+ 624:	f9 e0       	ldi	r31, 0x09	; 9
+ 626:	80 81       	ld	r24, Z
+ 628:	80 64       	ori	r24, 0x40	; 64
+ 62a:	80 83       	st	Z, r24
+spi_enable(&SPID);
+
+}
+ 62c:	1f 91       	pop	r17
+ 62e:	0f 91       	pop	r16
+ 630:	ff 90       	pop	r15
+ 632:	ef 90       	pop	r14
+ 634:	df 90       	pop	r13
+ 636:	cf 90       	pop	r12
+ 638:	08 95       	ret
+
+0000063a <main>:
+uint8_t OUT2[1]={'p'};
+	
+int main (void)
+{
+	/* Insert system clock initialization code here (sysclk_init()). */
+	sysclk_init();
+ 63a:	a7 de       	rcall	.-690    	; 0x38a <sysclk_init>
+	board_init();
+ 63c:	24 df       	rcall	.-440    	; 0x486 <board_init>
+	pin_config();
+ 63e:	24 df       	rcall	.-440    	; 0x488 <pin_config>
+	SPI_init();	
+ 640:	98 df       	rcall	.-208    	; 0x572 <SPI_init>
+	irq_initialize_vectors();
+ 642:	87 e0       	ldi	r24, 0x07	; 7
+ 644:	80 93 a2 00 	sts	0x00A2, r24
+	cpu_irq_enable();
+ 648:	78 94       	sei
+
+	while (1)
+	{
+
+		if (IN1[0]=='p')
+ 64a:	80 91 05 20 	lds	r24, 0x2005
+		{
+			PORTA.OUTSET=PIN1_bm;
+ 64e:	e0 e0       	ldi	r30, 0x00	; 0
+ 650:	f6 e0       	ldi	r31, 0x06	; 6
+ 652:	92 e0       	ldi	r25, 0x02	; 2
+	cpu_irq_enable();
+
+	while (1)
+	{
+
+		if (IN1[0]=='p')
+ 654:	80 37       	cpi	r24, 0x70	; 112
+ 656:	f1 f7       	brne	.-4      	; 0x654 <main+0x1a>
+		{
+			PORTA.OUTSET=PIN1_bm;
+ 658:	95 83       	std	Z+5, r25	; 0x05
+ 65a:	fc cf       	rjmp	.-8      	; 0x654 <main+0x1a>
+
+0000065c <__udivmodsi4>:
+ 65c:	a1 e2       	ldi	r26, 0x21	; 33
+ 65e:	1a 2e       	mov	r1, r26
+ 660:	aa 1b       	sub	r26, r26
+ 662:	bb 1b       	sub	r27, r27
+ 664:	fd 01       	movw	r30, r26
+ 666:	0d c0       	rjmp	.+26     	; 0x682 <__udivmodsi4_ep>
+
+00000668 <__udivmodsi4_loop>:
+ 668:	aa 1f       	adc	r26, r26
+ 66a:	bb 1f       	adc	r27, r27
+ 66c:	ee 1f       	adc	r30, r30
+ 66e:	ff 1f       	adc	r31, r31
+ 670:	a2 17       	cp	r26, r18
+ 672:	b3 07       	cpc	r27, r19
+ 674:	e4 07       	cpc	r30, r20
+ 676:	f5 07       	cpc	r31, r21
+ 678:	20 f0       	brcs	.+8      	; 0x682 <__udivmodsi4_ep>
+ 67a:	a2 1b       	sub	r26, r18
+ 67c:	b3 0b       	sbc	r27, r19
+ 67e:	e4 0b       	sbc	r30, r20
+ 680:	f5 0b       	sbc	r31, r21
+
+00000682 <__udivmodsi4_ep>:
+ 682:	66 1f       	adc	r22, r22
+ 684:	77 1f       	adc	r23, r23
+ 686:	88 1f       	adc	r24, r24
+ 688:	99 1f       	adc	r25, r25
+ 68a:	1a 94       	dec	r1
+ 68c:	69 f7       	brne	.-38     	; 0x668 <__udivmodsi4_loop>
+ 68e:	60 95       	com	r22
+ 690:	70 95       	com	r23
+ 692:	80 95       	com	r24
+ 694:	90 95       	com	r25
+ 696:	9b 01       	movw	r18, r22
+ 698:	ac 01       	movw	r20, r24
+ 69a:	bd 01       	movw	r22, r26
+ 69c:	cf 01       	movw	r24, r30
+ 69e:	08 95       	ret
+
+000006a0 <_exit>:
+ 6a0:	f8 94       	cli
+
+000006a2 <__stop_program>:
+ 6a2:	ff cf       	rjmp	.-2      	; 0x6a2 <__stop_program>

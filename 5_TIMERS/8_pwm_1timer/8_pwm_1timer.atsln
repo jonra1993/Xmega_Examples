@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "8_pwm_1timer", "8_pwm_1timer\8_pwm_1timer.cproj", "{7D8A9929-5130-4E58-8850-9D3BC3F1BB42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D8A9929-5130-4E58-8850-9D3BC3F1BB42}.Debug|AVR.ActiveCfg = Debug|AVR
+		{7D8A9929-5130-4E58-8850-9D3BC3F1BB42}.Debug|AVR.Build.0 = Debug|AVR
+		{7D8A9929-5130-4E58-8850-9D3BC3F1BB42}.Release|AVR.ActiveCfg = Release|AVR
+		{7D8A9929-5130-4E58-8850-9D3BC3F1BB42}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

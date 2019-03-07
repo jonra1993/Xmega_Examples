@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TIMER_EX1", "TIMER_EX1\TIMER_EX1_6_2.cproj", "{27CCB57E-FF33-474C-B569-88CBCABE0533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27CCB57E-FF33-474C-B569-88CBCABE0533}.Debug|AVR.ActiveCfg = Debug|AVR
+		{27CCB57E-FF33-474C-B569-88CBCABE0533}.Debug|AVR.Build.0 = Debug|AVR
+		{27CCB57E-FF33-474C-B569-88CBCABE0533}.Release|AVR.ActiveCfg = Release|AVR
+		{27CCB57E-FF33-474C-B569-88CBCABE0533}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

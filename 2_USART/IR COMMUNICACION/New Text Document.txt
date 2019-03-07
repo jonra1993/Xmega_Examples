@@ -1,0 +1,8 @@
+https://learn.sparkfun.com/tutorials/ir-communication
+http://hw-server.com/introduction-irda
+
+http://lirc-remotes.sourceforge.net/remotes-table.html  codigo de conroles
+http://www.lirc.org/
+
+
+leer algoritmo  http://electronicayciencia.blogspot.com/2010/05/receptor-con-pic-para-mandos.html

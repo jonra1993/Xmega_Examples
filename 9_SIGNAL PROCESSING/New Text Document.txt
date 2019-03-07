@@ -1,0 +1,12 @@
+https://www.hackster.io/bruceland/dsp-on-8-bit-microcontroller-21220c
+http://www.mikroe.com/chapters/view/73/chapter-3-iir-filters/
+
+http://www.analog.com/designtools/en/filterwizard/
+http://www.magesblog.com/2014/12/measuring-temperature-with-my-arduino.html
+
+kalman http://interactive-matter.eu/blog/2009/12/18/filtering-sensor-data-with-a-kalman-filter/
+
+http://robologs.net/2014/10/15/tutorial-de-arduino-y-mpu-6050/
+http://micorobot.blogspot.com/2012/11/filtro-de-kalman-e-imu.html
+http://www.cs.unc.edu/~welch/kalman/
+http://www.den-uijl.nl/electronics/gyro.html

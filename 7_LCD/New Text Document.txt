@@ -1,0 +1,8 @@
+http://leoninstruments.blogspot.com/2014/05/xmega-tutorial-lcd-display-05.html
+
+https://www.youtube.com/watch?v=bQc-P7RRiJ0
+http://mikeyancey.com/hamcalc/lcd_characters.php
+http://www.8051projects.net/lcd-interfacing/lcd-custom-character.php
+
+
+probar esta libreria  http://agock.com/2012/07/making-custom-fonts-for-glcd-library/

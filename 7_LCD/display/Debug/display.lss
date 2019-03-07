@@ -1,0 +1,609 @@
+
+display.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000003d8  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000006  00802000  000003d8  0000044c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .stab         000006e4  00000000  00000000  00000454  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000097  00000000  00000000  00000b38  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .comment      0000002f  00000000  00000000  00000bcf  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000090  00000000  00000000  00000bfe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000939  00000000  00000000  00000c8e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000028b  00000000  00000000  000015c7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000505  00000000  00000000  00001852  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000164  00000000  00000000  00001d58  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000295  00000000  00000000  00001ebc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000003c9  00000000  00000000  00002151  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000088  00000000  00000000  0000251a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	05 c1       	rjmp	.+522    	; 0x20c <__ctors_end>
+   2:	00 00       	nop
+   4:	1a c1       	rjmp	.+564    	; 0x23a <__bad_interrupt>
+   6:	00 00       	nop
+   8:	18 c1       	rjmp	.+560    	; 0x23a <__bad_interrupt>
+   a:	00 00       	nop
+   c:	16 c1       	rjmp	.+556    	; 0x23a <__bad_interrupt>
+   e:	00 00       	nop
+  10:	14 c1       	rjmp	.+552    	; 0x23a <__bad_interrupt>
+  12:	00 00       	nop
+  14:	12 c1       	rjmp	.+548    	; 0x23a <__bad_interrupt>
+  16:	00 00       	nop
+  18:	10 c1       	rjmp	.+544    	; 0x23a <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	0e c1       	rjmp	.+540    	; 0x23a <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	0c c1       	rjmp	.+536    	; 0x23a <__bad_interrupt>
+  22:	00 00       	nop
+  24:	0a c1       	rjmp	.+532    	; 0x23a <__bad_interrupt>
+  26:	00 00       	nop
+  28:	08 c1       	rjmp	.+528    	; 0x23a <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	06 c1       	rjmp	.+524    	; 0x23a <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	04 c1       	rjmp	.+520    	; 0x23a <__bad_interrupt>
+  32:	00 00       	nop
+  34:	02 c1       	rjmp	.+516    	; 0x23a <__bad_interrupt>
+  36:	00 00       	nop
+  38:	00 c1       	rjmp	.+512    	; 0x23a <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	fe c0       	rjmp	.+508    	; 0x23a <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	fc c0       	rjmp	.+504    	; 0x23a <__bad_interrupt>
+  42:	00 00       	nop
+  44:	fa c0       	rjmp	.+500    	; 0x23a <__bad_interrupt>
+  46:	00 00       	nop
+  48:	f8 c0       	rjmp	.+496    	; 0x23a <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	f6 c0       	rjmp	.+492    	; 0x23a <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	f4 c0       	rjmp	.+488    	; 0x23a <__bad_interrupt>
+  52:	00 00       	nop
+  54:	f2 c0       	rjmp	.+484    	; 0x23a <__bad_interrupt>
+  56:	00 00       	nop
+  58:	f0 c0       	rjmp	.+480    	; 0x23a <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	ee c0       	rjmp	.+476    	; 0x23a <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	ec c0       	rjmp	.+472    	; 0x23a <__bad_interrupt>
+  62:	00 00       	nop
+  64:	ea c0       	rjmp	.+468    	; 0x23a <__bad_interrupt>
+  66:	00 00       	nop
+  68:	e8 c0       	rjmp	.+464    	; 0x23a <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	e6 c0       	rjmp	.+460    	; 0x23a <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	e4 c0       	rjmp	.+456    	; 0x23a <__bad_interrupt>
+  72:	00 00       	nop
+  74:	e2 c0       	rjmp	.+452    	; 0x23a <__bad_interrupt>
+  76:	00 00       	nop
+  78:	e0 c0       	rjmp	.+448    	; 0x23a <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	de c0       	rjmp	.+444    	; 0x23a <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	dc c0       	rjmp	.+440    	; 0x23a <__bad_interrupt>
+  82:	00 00       	nop
+  84:	da c0       	rjmp	.+436    	; 0x23a <__bad_interrupt>
+  86:	00 00       	nop
+  88:	d8 c0       	rjmp	.+432    	; 0x23a <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	d6 c0       	rjmp	.+428    	; 0x23a <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	d4 c0       	rjmp	.+424    	; 0x23a <__bad_interrupt>
+  92:	00 00       	nop
+  94:	d2 c0       	rjmp	.+420    	; 0x23a <__bad_interrupt>
+  96:	00 00       	nop
+  98:	d0 c0       	rjmp	.+416    	; 0x23a <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	ce c0       	rjmp	.+412    	; 0x23a <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	cc c0       	rjmp	.+408    	; 0x23a <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	ca c0       	rjmp	.+404    	; 0x23a <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	c8 c0       	rjmp	.+400    	; 0x23a <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	c6 c0       	rjmp	.+396    	; 0x23a <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	c4 c0       	rjmp	.+392    	; 0x23a <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	c2 c0       	rjmp	.+388    	; 0x23a <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	c0 c0       	rjmp	.+384    	; 0x23a <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	be c0       	rjmp	.+380    	; 0x23a <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	bc c0       	rjmp	.+376    	; 0x23a <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	ba c0       	rjmp	.+372    	; 0x23a <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	b8 c0       	rjmp	.+368    	; 0x23a <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	b6 c0       	rjmp	.+364    	; 0x23a <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	b4 c0       	rjmp	.+360    	; 0x23a <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	b2 c0       	rjmp	.+356    	; 0x23a <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	b0 c0       	rjmp	.+352    	; 0x23a <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	ae c0       	rjmp	.+348    	; 0x23a <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	ac c0       	rjmp	.+344    	; 0x23a <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	aa c0       	rjmp	.+340    	; 0x23a <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	a8 c0       	rjmp	.+336    	; 0x23a <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	a6 c0       	rjmp	.+332    	; 0x23a <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	a4 c0       	rjmp	.+328    	; 0x23a <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	a2 c0       	rjmp	.+324    	; 0x23a <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	a0 c0       	rjmp	.+320    	; 0x23a <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	9e c0       	rjmp	.+316    	; 0x23a <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	9c c0       	rjmp	.+312    	; 0x23a <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	9a c0       	rjmp	.+308    	; 0x23a <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	98 c0       	rjmp	.+304    	; 0x23a <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	96 c0       	rjmp	.+300    	; 0x23a <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	94 c0       	rjmp	.+296    	; 0x23a <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	92 c0       	rjmp	.+292    	; 0x23a <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	90 c0       	rjmp	.+288    	; 0x23a <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	8e c0       	rjmp	.+284    	; 0x23a <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	8c c0       	rjmp	.+280    	; 0x23a <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	8a c0       	rjmp	.+276    	; 0x23a <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	88 c0       	rjmp	.+272    	; 0x23a <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	86 c0       	rjmp	.+268    	; 0x23a <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	84 c0       	rjmp	.+264    	; 0x23a <__bad_interrupt>
+ 132:	00 00       	nop
+ 134:	82 c0       	rjmp	.+260    	; 0x23a <__bad_interrupt>
+ 136:	00 00       	nop
+ 138:	80 c0       	rjmp	.+256    	; 0x23a <__bad_interrupt>
+ 13a:	00 00       	nop
+ 13c:	7e c0       	rjmp	.+252    	; 0x23a <__bad_interrupt>
+ 13e:	00 00       	nop
+ 140:	7c c0       	rjmp	.+248    	; 0x23a <__bad_interrupt>
+ 142:	00 00       	nop
+ 144:	7a c0       	rjmp	.+244    	; 0x23a <__bad_interrupt>
+ 146:	00 00       	nop
+ 148:	78 c0       	rjmp	.+240    	; 0x23a <__bad_interrupt>
+ 14a:	00 00       	nop
+ 14c:	76 c0       	rjmp	.+236    	; 0x23a <__bad_interrupt>
+ 14e:	00 00       	nop
+ 150:	74 c0       	rjmp	.+232    	; 0x23a <__bad_interrupt>
+ 152:	00 00       	nop
+ 154:	72 c0       	rjmp	.+228    	; 0x23a <__bad_interrupt>
+ 156:	00 00       	nop
+ 158:	70 c0       	rjmp	.+224    	; 0x23a <__bad_interrupt>
+ 15a:	00 00       	nop
+ 15c:	6e c0       	rjmp	.+220    	; 0x23a <__bad_interrupt>
+ 15e:	00 00       	nop
+ 160:	6c c0       	rjmp	.+216    	; 0x23a <__bad_interrupt>
+ 162:	00 00       	nop
+ 164:	6a c0       	rjmp	.+212    	; 0x23a <__bad_interrupt>
+ 166:	00 00       	nop
+ 168:	68 c0       	rjmp	.+208    	; 0x23a <__bad_interrupt>
+ 16a:	00 00       	nop
+ 16c:	66 c0       	rjmp	.+204    	; 0x23a <__bad_interrupt>
+ 16e:	00 00       	nop
+ 170:	64 c0       	rjmp	.+200    	; 0x23a <__bad_interrupt>
+ 172:	00 00       	nop
+ 174:	62 c0       	rjmp	.+196    	; 0x23a <__bad_interrupt>
+ 176:	00 00       	nop
+ 178:	60 c0       	rjmp	.+192    	; 0x23a <__bad_interrupt>
+ 17a:	00 00       	nop
+ 17c:	5e c0       	rjmp	.+188    	; 0x23a <__bad_interrupt>
+ 17e:	00 00       	nop
+ 180:	5c c0       	rjmp	.+184    	; 0x23a <__bad_interrupt>
+ 182:	00 00       	nop
+ 184:	5a c0       	rjmp	.+180    	; 0x23a <__bad_interrupt>
+ 186:	00 00       	nop
+ 188:	58 c0       	rjmp	.+176    	; 0x23a <__bad_interrupt>
+ 18a:	00 00       	nop
+ 18c:	56 c0       	rjmp	.+172    	; 0x23a <__bad_interrupt>
+ 18e:	00 00       	nop
+ 190:	54 c0       	rjmp	.+168    	; 0x23a <__bad_interrupt>
+ 192:	00 00       	nop
+ 194:	52 c0       	rjmp	.+164    	; 0x23a <__bad_interrupt>
+ 196:	00 00       	nop
+ 198:	50 c0       	rjmp	.+160    	; 0x23a <__bad_interrupt>
+ 19a:	00 00       	nop
+ 19c:	4e c0       	rjmp	.+156    	; 0x23a <__bad_interrupt>
+ 19e:	00 00       	nop
+ 1a0:	4c c0       	rjmp	.+152    	; 0x23a <__bad_interrupt>
+ 1a2:	00 00       	nop
+ 1a4:	4a c0       	rjmp	.+148    	; 0x23a <__bad_interrupt>
+ 1a6:	00 00       	nop
+ 1a8:	48 c0       	rjmp	.+144    	; 0x23a <__bad_interrupt>
+ 1aa:	00 00       	nop
+ 1ac:	46 c0       	rjmp	.+140    	; 0x23a <__bad_interrupt>
+ 1ae:	00 00       	nop
+ 1b0:	44 c0       	rjmp	.+136    	; 0x23a <__bad_interrupt>
+ 1b2:	00 00       	nop
+ 1b4:	42 c0       	rjmp	.+132    	; 0x23a <__bad_interrupt>
+ 1b6:	00 00       	nop
+ 1b8:	40 c0       	rjmp	.+128    	; 0x23a <__bad_interrupt>
+ 1ba:	00 00       	nop
+ 1bc:	3e c0       	rjmp	.+124    	; 0x23a <__bad_interrupt>
+ 1be:	00 00       	nop
+ 1c0:	3c c0       	rjmp	.+120    	; 0x23a <__bad_interrupt>
+ 1c2:	00 00       	nop
+ 1c4:	3a c0       	rjmp	.+116    	; 0x23a <__bad_interrupt>
+ 1c6:	00 00       	nop
+ 1c8:	38 c0       	rjmp	.+112    	; 0x23a <__bad_interrupt>
+ 1ca:	00 00       	nop
+ 1cc:	36 c0       	rjmp	.+108    	; 0x23a <__bad_interrupt>
+ 1ce:	00 00       	nop
+ 1d0:	34 c0       	rjmp	.+104    	; 0x23a <__bad_interrupt>
+ 1d2:	00 00       	nop
+ 1d4:	32 c0       	rjmp	.+100    	; 0x23a <__bad_interrupt>
+ 1d6:	00 00       	nop
+ 1d8:	30 c0       	rjmp	.+96     	; 0x23a <__bad_interrupt>
+ 1da:	00 00       	nop
+ 1dc:	2e c0       	rjmp	.+92     	; 0x23a <__bad_interrupt>
+ 1de:	00 00       	nop
+ 1e0:	2c c0       	rjmp	.+88     	; 0x23a <__bad_interrupt>
+ 1e2:	00 00       	nop
+ 1e4:	2a c0       	rjmp	.+84     	; 0x23a <__bad_interrupt>
+ 1e6:	00 00       	nop
+ 1e8:	28 c0       	rjmp	.+80     	; 0x23a <__bad_interrupt>
+ 1ea:	00 00       	nop
+ 1ec:	26 c0       	rjmp	.+76     	; 0x23a <__bad_interrupt>
+ 1ee:	00 00       	nop
+ 1f0:	24 c0       	rjmp	.+72     	; 0x23a <__bad_interrupt>
+ 1f2:	00 00       	nop
+ 1f4:	22 c0       	rjmp	.+68     	; 0x23a <__bad_interrupt>
+ 1f6:	00 00       	nop
+ 1f8:	20 c0       	rjmp	.+64     	; 0x23a <__bad_interrupt>
+	...
+
+000001fc <__c.3798>:
+ 1fc:	7a 20 70 61 6d 69 65 63 69 20 66 6c 61 73 68 00     z pamieci flash.
+
+0000020c <__ctors_end>:
+ 20c:	11 24       	eor	r1, r1
+ 20e:	1f be       	out	0x3f, r1	; 63
+ 210:	cf ef       	ldi	r28, 0xFF	; 255
+ 212:	df e3       	ldi	r29, 0x3F	; 63
+ 214:	de bf       	out	0x3e, r29	; 62
+ 216:	cd bf       	out	0x3d, r28	; 61
+ 218:	00 e0       	ldi	r16, 0x00	; 0
+ 21a:	0c bf       	out	0x3c, r16	; 60
+
+0000021c <__do_copy_data>:
+ 21c:	10 e2       	ldi	r17, 0x20	; 32
+ 21e:	a0 e0       	ldi	r26, 0x00	; 0
+ 220:	b0 e2       	ldi	r27, 0x20	; 32
+ 222:	e8 ed       	ldi	r30, 0xD8	; 216
+ 224:	f3 e0       	ldi	r31, 0x03	; 3
+ 226:	00 e0       	ldi	r16, 0x00	; 0
+ 228:	0b bf       	out	0x3b, r16	; 59
+ 22a:	02 c0       	rjmp	.+4      	; 0x230 <__do_copy_data+0x14>
+ 22c:	07 90       	elpm	r0, Z+
+ 22e:	0d 92       	st	X+, r0
+ 230:	a6 30       	cpi	r26, 0x06	; 6
+ 232:	b1 07       	cpc	r27, r17
+ 234:	d9 f7       	brne	.-10     	; 0x22c <__do_copy_data+0x10>
+ 236:	c1 d0       	rcall	.+386    	; 0x3ba <main>
+ 238:	cd c0       	rjmp	.+410    	; 0x3d4 <_exit>
+
+0000023a <__bad_interrupt>:
+ 23a:	e2 ce       	rjmp	.-572    	; 0x0 <__vectors>
+
+0000023c <_lcd_OutNibble>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 23c:	80 ff       	sbrs	r24, 0
+ 23e:	05 c0       	rjmp	.+10     	; 0x24a <_lcd_OutNibble+0xe>
+ 240:	90 e1       	ldi	r25, 0x10	; 16
+ 242:	e0 e4       	ldi	r30, 0x40	; 64
+ 244:	f6 e0       	ldi	r31, 0x06	; 6
+ 246:	95 83       	std	Z+5, r25	; 0x05
+ 248:	04 c0       	rjmp	.+8      	; 0x252 <_lcd_OutNibble+0x16>
+ 24a:	90 e1       	ldi	r25, 0x10	; 16
+ 24c:	e0 e4       	ldi	r30, 0x40	; 64
+ 24e:	f6 e0       	ldi	r31, 0x06	; 6
+ 250:	96 83       	std	Z+6, r25	; 0x06
+ 252:	81 ff       	sbrs	r24, 1
+ 254:	05 c0       	rjmp	.+10     	; 0x260 <_lcd_OutNibble+0x24>
+ 256:	90 e2       	ldi	r25, 0x20	; 32
+ 258:	e0 e4       	ldi	r30, 0x40	; 64
+ 25a:	f6 e0       	ldi	r31, 0x06	; 6
+ 25c:	95 83       	std	Z+5, r25	; 0x05
+ 25e:	04 c0       	rjmp	.+8      	; 0x268 <_lcd_OutNibble+0x2c>
+ 260:	90 e2       	ldi	r25, 0x20	; 32
+ 262:	e0 e4       	ldi	r30, 0x40	; 64
+ 264:	f6 e0       	ldi	r31, 0x06	; 6
+ 266:	96 83       	std	Z+6, r25	; 0x06
+ 268:	82 ff       	sbrs	r24, 2
+ 26a:	05 c0       	rjmp	.+10     	; 0x276 <_lcd_OutNibble+0x3a>
+ 26c:	90 e4       	ldi	r25, 0x40	; 64
+ 26e:	e0 e4       	ldi	r30, 0x40	; 64
+ 270:	f6 e0       	ldi	r31, 0x06	; 6
+ 272:	95 83       	std	Z+5, r25	; 0x05
+ 274:	04 c0       	rjmp	.+8      	; 0x27e <_lcd_OutNibble+0x42>
+ 276:	90 e4       	ldi	r25, 0x40	; 64
+ 278:	e0 e4       	ldi	r30, 0x40	; 64
+ 27a:	f6 e0       	ldi	r31, 0x06	; 6
+ 27c:	96 83       	std	Z+6, r25	; 0x06
+ 27e:	83 ff       	sbrs	r24, 3
+ 280:	05 c0       	rjmp	.+10     	; 0x28c <_lcd_OutNibble+0x50>
+ 282:	80 e8       	ldi	r24, 0x80	; 128
+ 284:	e0 e4       	ldi	r30, 0x40	; 64
+ 286:	f6 e0       	ldi	r31, 0x06	; 6
+ 288:	85 83       	std	Z+5, r24	; 0x05
+ 28a:	08 95       	ret
+ 28c:	80 e8       	ldi	r24, 0x80	; 128
+ 28e:	e0 e4       	ldi	r30, 0x40	; 64
+ 290:	f6 e0       	ldi	r31, 0x06	; 6
+ 292:	86 83       	std	Z+6, r24	; 0x06
+ 294:	08 95       	ret
+
+00000296 <_lcd_Write>:
+ 296:	0f 93       	push	r16
+ 298:	1f 93       	push	r17
+ 29a:	cf 93       	push	r28
+ 29c:	df 93       	push	r29
+ 29e:	08 2f       	mov	r16, r24
+ 2a0:	c0 e4       	ldi	r28, 0x40	; 64
+ 2a2:	d6 e0       	ldi	r29, 0x06	; 6
+ 2a4:	18 e0       	ldi	r17, 0x08	; 8
+ 2a6:	1d 83       	std	Y+5, r17	; 0x05
+ 2a8:	82 95       	swap	r24
+ 2aa:	8f 70       	andi	r24, 0x0F	; 15
+ 2ac:	c7 df       	rcall	.-114    	; 0x23c <_lcd_OutNibble>
+ 2ae:	1e 83       	std	Y+6, r17	; 0x06
+ 2b0:	00 00       	nop
+ 2b2:	00 00       	nop
+ 2b4:	1d 83       	std	Y+5, r17	; 0x05
+ 2b6:	80 2f       	mov	r24, r16
+ 2b8:	c1 df       	rcall	.-126    	; 0x23c <_lcd_OutNibble>
+ 2ba:	1e 83       	std	Y+6, r17	; 0x06
+ 2bc:	81 e2       	ldi	r24, 0x21	; 33
+ 2be:	8a 95       	dec	r24
+ 2c0:	f1 f7       	brne	.-4      	; 0x2be <_lcd_Write+0x28>
+ 2c2:	00 00       	nop
+ 2c4:	df 91       	pop	r29
+ 2c6:	cf 91       	pop	r28
+ 2c8:	1f 91       	pop	r17
+ 2ca:	0f 91       	pop	r16
+ 2cc:	08 95       	ret
+
+000002ce <LcdCommand>:
+ 2ce:	94 e0       	ldi	r25, 0x04	; 4
+ 2d0:	e0 e4       	ldi	r30, 0x40	; 64
+ 2d2:	f6 e0       	ldi	r31, 0x06	; 6
+ 2d4:	96 83       	std	Z+6, r25	; 0x06
+ 2d6:	df cf       	rjmp	.-66     	; 0x296 <_lcd_Write>
+
+000002d8 <LcdData>:
+ 2d8:	94 e0       	ldi	r25, 0x04	; 4
+ 2da:	e0 e4       	ldi	r30, 0x40	; 64
+ 2dc:	f6 e0       	ldi	r31, 0x06	; 6
+ 2de:	95 83       	std	Z+5, r25	; 0x05
+ 2e0:	da cf       	rjmp	.-76     	; 0x296 <_lcd_Write>
+
+000002e2 <LcdWrite>:
+ 2e2:	cf 93       	push	r28
+ 2e4:	df 93       	push	r29
+ 2e6:	ec 01       	movw	r28, r24
+ 2e8:	88 81       	ld	r24, Y
+ 2ea:	88 23       	and	r24, r24
+ 2ec:	29 f0       	breq	.+10     	; 0x2f8 <LcdWrite+0x16>
+ 2ee:	21 96       	adiw	r28, 0x01	; 1
+ 2f0:	f3 df       	rcall	.-26     	; 0x2d8 <LcdData>
+ 2f2:	89 91       	ld	r24, Y+
+ 2f4:	81 11       	cpse	r24, r1
+ 2f6:	fc cf       	rjmp	.-8      	; 0x2f0 <LcdWrite+0xe>
+ 2f8:	df 91       	pop	r29
+ 2fa:	cf 91       	pop	r28
+ 2fc:	08 95       	ret
+
+000002fe <LcdWriteProgmem>:
+ 2fe:	cf 93       	push	r28
+ 300:	df 93       	push	r29
+ 302:	ec 01       	movw	r28, r24
+ 304:	21 96       	adiw	r28, 0x01	; 1
+ 306:	fc 01       	movw	r30, r24
+ 308:	84 91       	lpm	r24, Z
+ 30a:	88 23       	and	r24, r24
+ 30c:	31 f0       	breq	.+12     	; 0x31a <LcdWriteProgmem+0x1c>
+ 30e:	e4 df       	rcall	.-56     	; 0x2d8 <LcdData>
+ 310:	fe 01       	movw	r30, r28
+ 312:	21 96       	adiw	r28, 0x01	; 1
+ 314:	84 91       	lpm	r24, Z
+ 316:	81 11       	cpse	r24, r1
+ 318:	fa cf       	rjmp	.-12     	; 0x30e <LcdWriteProgmem+0x10>
+ 31a:	df 91       	pop	r29
+ 31c:	cf 91       	pop	r28
+ 31e:	08 95       	ret
+
+00000320 <LcdGoto>:
+ 320:	90 e4       	ldi	r25, 0x40	; 64
+ 322:	69 9f       	mul	r22, r25
+ 324:	80 0d       	add	r24, r0
+ 326:	11 24       	eor	r1, r1
+ 328:	80 68       	ori	r24, 0x80	; 128
+ 32a:	d1 cf       	rjmp	.-94     	; 0x2ce <LcdCommand>
+
+0000032c <LcdInit>:
+//
+// Procedura inicjalizacji kontrolera HD44780.
+//
+//-------------------------------------------------------------------------------------------------
+void LcdInit(void)
+{
+ 32c:	ff 92       	push	r15
+ 32e:	0f 93       	push	r16
+ 330:	1f 93       	push	r17
+ 332:	cf 93       	push	r28
+ 334:	df 93       	push	r29
+unsigned char i;
+LCD_PORT.DIRSET	=	LCD_D4_bm|
+ 336:	e0 e4       	ldi	r30, 0x40	; 64
+ 338:	f6 e0       	ldi	r31, 0x06	; 6
+ 33a:	8c ef       	ldi	r24, 0xFC	; 252
+ 33c:	81 83       	std	Z+1, r24	; 0x01
+ 33e:	8b e4       	ldi	r24, 0x4B	; 75
+ 340:	9d e1       	ldi	r25, 0x1D	; 29
+ 342:	01 97       	sbiw	r24, 0x01	; 1
+ 344:	f1 f7       	brne	.-4      	; 0x342 <LcdInit+0x16>
+ 346:	00 c0       	rjmp	.+0      	; 0x348 <LcdInit+0x1c>
+ 348:	00 00       	nop
+					LCD_D6_bm|
+					LCD_D7_bm|
+					LCD_RS_bm|
+					LCD_E_bm;
+_delay_ms(15); // oczekiwanie na ustalibizowanie siê napiecia zasilajacego
+LCD_PORT.OUTCLR = LCD_RS_bm;
+ 34a:	84 e0       	ldi	r24, 0x04	; 4
+ 34c:	86 83       	std	Z+6, r24	; 0x06
+LCD_PORT.OUTCLR = LCD_E_bm;
+ 34e:	88 e0       	ldi	r24, 0x08	; 8
+ 350:	86 83       	std	Z+6, r24	; 0x06
+ 352:	13 e0       	ldi	r17, 0x03	; 3
+
+for(i = 0; i < 3; i++) // trzykrotne powtórzenie bloku instrukcji
+  {
+  LCD_PORT.OUTSET = LCD_E_bm;
+ 354:	c0 e4       	ldi	r28, 0x40	; 64
+ 356:	d6 e0       	ldi	r29, 0x06	; 6
+ 358:	08 e0       	ldi	r16, 0x08	; 8
+ 35a:	f0 2e       	mov	r15, r16
+ 35c:	fd 82       	std	Y+5, r15	; 0x05
+  _lcd_OutNibble(0x03); // tryb 8-bitowy
+ 35e:	83 e0       	ldi	r24, 0x03	; 3
+ 360:	6d df       	rcall	.-294    	; 0x23c <_lcd_OutNibble>
+  LCD_PORT.OUTCLR = LCD_E_bm;
+ 362:	0e 83       	std	Y+6, r16	; 0x06
+ 364:	83 ec       	ldi	r24, 0xC3	; 195
+ 366:	99 e0       	ldi	r25, 0x09	; 9
+ 368:	01 97       	sbiw	r24, 0x01	; 1
+ 36a:	f1 f7       	brne	.-4      	; 0x368 <LcdInit+0x3c>
+ 36c:	00 c0       	rjmp	.+0      	; 0x36e <LcdInit+0x42>
+ 36e:	00 00       	nop
+ 370:	11 50       	subi	r17, 0x01	; 1
+					LCD_E_bm;
+_delay_ms(15); // oczekiwanie na ustalibizowanie siê napiecia zasilajacego
+LCD_PORT.OUTCLR = LCD_RS_bm;
+LCD_PORT.OUTCLR = LCD_E_bm;
+
+for(i = 0; i < 3; i++) // trzykrotne powtórzenie bloku instrukcji
+ 372:	a1 f7       	brne	.-24     	; 0x35c <LcdInit+0x30>
+  _lcd_OutNibble(0x03); // tryb 8-bitowy
+  LCD_PORT.OUTCLR = LCD_E_bm;
+  _delay_ms(5); // czekaj 5ms
+  }
+
+LCD_PORT.OUTSET = LCD_E_bm;
+ 374:	c0 e4       	ldi	r28, 0x40	; 64
+ 376:	d6 e0       	ldi	r29, 0x06	; 6
+ 378:	18 e0       	ldi	r17, 0x08	; 8
+ 37a:	1d 83       	std	Y+5, r17	; 0x05
+_lcd_OutNibble(0x02); // tryb 4-bitowy
+ 37c:	82 e0       	ldi	r24, 0x02	; 2
+ 37e:	5e df       	rcall	.-324    	; 0x23c <_lcd_OutNibble>
+LCD_PORT.OUTCLR = LCD_E_bm;
+ 380:	1e 83       	std	Y+6, r17	; 0x06
+ 382:	83 ef       	ldi	r24, 0xF3	; 243
+ 384:	91 e0       	ldi	r25, 0x01	; 1
+ 386:	01 97       	sbiw	r24, 0x01	; 1
+ 388:	f1 f7       	brne	.-4      	; 0x386 <LcdInit+0x5a>
+ 38a:	00 c0       	rjmp	.+0      	; 0x38c <LcdInit+0x60>
+ 38c:	00 00       	nop
+
+_delay_ms(1); // czekaj 1ms 
+LcdCommand(HD44780_FUNCTION_SET | HD44780_FONT5x7 | HD44780_TWO_LINE | HD44780_4_BIT); // interfejs 4-bity, 2-linie, znak 5x7
+ 38e:	88 e2       	ldi	r24, 0x28	; 40
+ 390:	9e df       	rcall	.-196    	; 0x2ce <LcdCommand>
+LcdCommand(HD44780_DISPLAY_ONOFF | HD44780_DISPLAY_OFF); // wy³¹czenie wyswietlacza
+ 392:	88 e0       	ldi	r24, 0x08	; 8
+ 394:	9c df       	rcall	.-200    	; 0x2ce <LcdCommand>
+LcdCommand(HD44780_CLEAR); // czyszczenie zawartosæi pamieci DDRAM
+ 396:	81 e0       	ldi	r24, 0x01	; 1
+ 398:	9a df       	rcall	.-204    	; 0x2ce <LcdCommand>
+ 39a:	87 ee       	ldi	r24, 0xE7	; 231
+ 39c:	93 e0       	ldi	r25, 0x03	; 3
+ 39e:	01 97       	sbiw	r24, 0x01	; 1
+ 3a0:	f1 f7       	brne	.-4      	; 0x39e <LcdInit+0x72>
+ 3a2:	00 c0       	rjmp	.+0      	; 0x3a4 <LcdInit+0x78>
+ 3a4:	00 00       	nop
+_delay_ms(2);
+LcdCommand(HD44780_ENTRY_MODE | HD44780_EM_SHIFT_CURSOR | HD44780_EM_INCREMENT);// inkrementaja adresu i przesuwanie kursora
+ 3a6:	86 e0       	ldi	r24, 0x06	; 6
+ 3a8:	92 df       	rcall	.-220    	; 0x2ce <LcdCommand>
+LcdCommand(HD44780_DISPLAY_ONOFF | HD44780_DISPLAY_ON | HD44780_CURSOR_OFF | HD44780_CURSOR_NOBLINK); // w³¹cz lcd, bez kursora i mrugania
+ 3aa:	8c e0       	ldi	r24, 0x0C	; 12
+ 3ac:	90 df       	rcall	.-224    	; 0x2ce <LcdCommand>
+}
+ 3ae:	df 91       	pop	r29
+ 3b0:	cf 91       	pop	r28
+ 3b2:	1f 91       	pop	r17
+ 3b4:	0f 91       	pop	r16
+ 3b6:	ff 90       	pop	r15
+ 3b8:	08 95       	ret
+
+000003ba <main>:
+
+#include <avr/io.h>
+#include "hd44780.h"
+
+int main(void) {
+	LcdInit();
+ 3ba:	b8 df       	rcall	.-144    	; 0x32c <LcdInit>
+	LcdWrite("test ");
+ 3bc:	80 e0       	ldi	r24, 0x00	; 0
+ 3be:	90 e2       	ldi	r25, 0x20	; 32
+ 3c0:	90 df       	rcall	.-224    	; 0x2e2 <LcdWrite>
+	Lcd2;
+ 3c2:	61 e0       	ldi	r22, 0x01	; 1
+ 3c4:	80 e0       	ldi	r24, 0x00	; 0
+ 3c6:	ac df       	rcall	.-168    	; 0x320 <LcdGoto>
+	Lcd("z pamieci flash");
+ 3c8:	8c ef       	ldi	r24, 0xFC	; 252
+ 3ca:	91 e0       	ldi	r25, 0x01	; 1
+ 3cc:	98 df       	rcall	.-208    	; 0x2fe <LcdWriteProgmem>
+ 3ce:	80 e0       	ldi	r24, 0x00	; 0
+ 3d0:	90 e0       	ldi	r25, 0x00	; 0
+ 3d2:	08 95       	ret
+
+000003d4 <_exit>:
+ 3d4:	f8 94       	cli
+
+000003d6 <__stop_program>:
+ 3d6:	ff cf       	rjmp	.-2      	; 0x3d6 <__stop_program>

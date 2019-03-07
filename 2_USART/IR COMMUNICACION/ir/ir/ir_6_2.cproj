@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{c5826114-7b84-4b04-8f55-cc52eefee654}</ProjectGuid>
+    <avrdevice>atxmega32a4</avrdevice>
+    <avrdeviceseries>xmegaa</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>ir</AssemblyName>
+    <Name>ir</Name>
+    <RootNamespace>ir</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options>
+          <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+        </options>
+        <configurations />
+        <files>
+          <file path="src/main.c" framework="" version="" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/config/conf_board.h" framework="" version="" source="common/applications/user_application/user_board/config/conf_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/board.h" framework="" version="" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/user_board/init.c" framework="" version="" source="common/boards/user_board/init.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/user_board/user_board.h" framework="" version="" source="common/boards/user_board/user_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt.h" framework="" version="" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" framework="" version="" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/make/Makefile.avr.in" framework="" version="" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/parts.h" framework="" version="" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/assembler.h" framework="" version="" source="xmega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/assembler/gas.h" framework="" version="" source="xmega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/bit_handling/clz_ctz.h" framework="" version="" source="xmega/utils/bit_handling/clz_ctz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/compiler.h" framework="" version="" source="xmega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/mrepeat.h" framework="" version="" source="xmega/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/preprocessor.h" framework="" version="" source="xmega/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/stringz.h" framework="" version="" source="xmega/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/tpaste.h" framework="" version="" source="xmega/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/progmem.h" framework="" version="" source="xmega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/status_codes.h" framework="" version="" source="xmega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+        </files>
+        <documentation help="http://asf.atmel.com/docs/3.17.0/common.applications.user_application.user_board.xmegaa/html/index.html" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.17.0" />
+        </dependencies>
+        <project id="common.applications.user_application.user_board.xmegaa" value="Add" config="" content-id="Atmel.ASF" />
+        <board id="board.user_board.xmegaa" value="Add" config="" content-id="Atmel.ASF" />
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>BOARD=USER_BOARD</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=USER_BOARD</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>BOARD=USER_BOARD</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=USER_BOARD</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../common/applications/user_application/user_board/config</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+            <Value>../src/config</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards/user_board</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\ASF\" />
+    <Folder Include="src\ASF\common\" />
+    <Folder Include="src\ASF\common\boards\" />
+    <Folder Include="src\ASF\common\boards\user_board\" />
+    <Folder Include="src\ASF\common\utils\" />
+    <Folder Include="src\ASF\common\utils\interrupt\" />
+    <Folder Include="src\ASF\common\utils\make\" />
+    <Folder Include="src\ASF\xmega\" />
+    <Folder Include="src\ASF\xmega\utils\" />
+    <Folder Include="src\ASF\xmega\utils\assembler\" />
+    <Folder Include="src\ASF\xmega\utils\bit_handling\" />
+    <Folder Include="src\ASF\xmega\utils\preprocessor\" />
+    <Folder Include="src\config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\usart_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\usart_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\user_board\user_board.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\make\Makefile.avr.in">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\assembler\gas.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\progmem.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\stringz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\boards\board.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\common\boards\user_board\init.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\common\utils\interrupt\interrupt_avr8.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\parts.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\status_codes.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\preprocessor.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\assembler.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\tpaste.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\bit_handling\clz_ctz.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\common\utils\interrupt.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_board.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\preprocessor\mrepeat.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\xmega\utils\compiler.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\avr_compiler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\IR_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\IR_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\main.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
