@@ -5,7 +5,7 @@ In this repository contains some examples using Atmel xmega microcontrollers the
 <br>
 
 <p align="center">
-  <img height="320" width="480" src="https://www.jonathanvargas.ml/wp-content/uploads/2019/03/xmega.png">
+  <img height="320" width="480" src="https://res.cloudinary.com/dnv0qwkrk/image/upload/v1601398516/wordpress_Jonathan/xmega.png">
 </p>
 
 
